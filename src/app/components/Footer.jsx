@@ -15,7 +15,7 @@ import {
           <div className="flex flex-col items-start">
             <img src="/logo.png" alt="HimaliyeMyTrip Logo" className="w-32 mb-4 text-white" />
             <p className="text-sm">
-              Conquer the Himalayan Heights on a Budget with HimaliyeMyTrip!
+              Conquer the Himalayan Heights on a Budget with MountainMyTrip!
             </p>
           </div>
   
@@ -54,7 +54,7 @@ import {
   
         {/* Copyright */}
         <div className="border-t mt-10 pt-4 text-center text-sm text-gray-400">
-          © Copyright HimaliyeMyTrip {new Date().getFullYear()}
+          © Copyright MountainMyTrip {new Date().getFullYear()}
         </div>
       </footer>
     );

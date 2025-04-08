@@ -92,7 +92,7 @@ export default function Form() {
       <a
         href="https://wa.me/yourwhatsapplink"
         target="_blank"
-        className="fixed bottom-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg flex items-center hover:bg-green-600 transition duration-200"
+        className="fixed bottom-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg flex items-center hover:bg-green-600 transition duration-200 z-50"
       >
         <FaWhatsapp size={24} />
         <span className="ml-2 hidden md:block">Need Help?</span>
