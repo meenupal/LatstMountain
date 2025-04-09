@@ -52,7 +52,7 @@ export default function Navbar() {
           {[
             { name: "Home", link: "/Home" },
             { name: "Destination", link: "/MountainMyTripGallery" },
-            { name: "Treks", link: "/home" },
+            { name: "Treks", link: "/Home" },
             { name: "Blog", link: "/Home" },
           ].map((item, index) => (
             <li
