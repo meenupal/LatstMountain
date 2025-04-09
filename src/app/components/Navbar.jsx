@@ -111,7 +111,8 @@ export default function Navbar() {
               { name: "Treks", link: "/home" },
               { name: "Stays with us", link: "/Stays with us" },
               { name: "Blog", link: "/" },
-              { name: "Book Your Stay", link: "/Book Your Stay" },
+              { name: "Book Your Stay", link: "/Contact" },
+          
             ].map((item, index) => (
               <li
                 key={index}
