@@ -51,16 +51,16 @@ export default function About() {
     <div className="">
       {/* Hero Section */}
       <div
-        className="bg-cover mt-24 bg-center h-[300px] flex items-center justify-center text-white text-center shadow-lg"
+        className="bg-cover mt-20 bg-center h-[300px] flex items-center justify-center text-white text-center shadow-lg"
         style={{
           backgroundImage: "url('deal10.jpg')",
         }}
       >
         <div className=" bg-opacity-50 p-10 rounded-xl">
           <h1 className="text-5xl font-extrabold drop-shadow-lg">About Us</h1>
-          <p className="text-lg mt-4 font-light">
+          <h3 className="text-lg mt-4 font-light">
             Discover the Himalayas like never before—one step at a time.
-          </p>
+          </h3>
         </div>
       </div>
 

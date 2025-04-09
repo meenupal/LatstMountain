@@ -76,3 +76,5 @@ export default function Destinations() {
     </section>
   );
 }
+
+

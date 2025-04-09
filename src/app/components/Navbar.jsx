@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -52,7 +51,7 @@ export default function Navbar() {
         <ul className="hidden md:flex space-x-10 text-gray-700 items-center font-medium">
           {[
             { name: "Home", link: "/Home" },
-            { name: "Destination", link: "/" },
+            { name: "Destination", link: "/MountainMyTripGallery" },
             { name: "Treks", link: "/home" },
             { name: "Blog", link: "/Home" },
           ].map((item, index) => (
@@ -108,7 +107,7 @@ export default function Navbar() {
           <ul className="text-white text-sm space-y-4">
             {[
               { name: "Home", link: "/Home" },
-              { name: "Destination", link: "/home" },
+              { name: "Destination", link: "/MountainMyTripGallery" },
               { name: "Treks", link: "/home" },
               { name: "Stays with us", link: "/Stays with us" },
               { name: "Blog", link: "/" },

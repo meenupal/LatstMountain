@@ -35,7 +35,7 @@ import {
           <div>
             <h3 className="font-semibold text-lg mb-3">Contact Us</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="mailto:info@himaliyemytrip.com">info@himaliyemytrip.com</a></li>
+              <li><a href="mailto:info@himaliyemytrip.com">info@MountainMytrip.com</a></li>
               <li><a href="tel:+918580904609">+91-85809 04609</a></li>
             </ul>
           </div>
