@@ -185,10 +185,10 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-10 text-gray-800 items-center font-medium text-lg h-full">
           {[
-            { name: "Home", link: "/Home" },
+            { name: "Home", link: "/" },
             { name: "Destination", link: "/MountainMyTripGallery" },
-            { name: "Treks", link: "/home" },
-            { name: "Blog", link: "/Home" },
+            { name: "Treks", link: "/" },
+            { name: "Blog", link: "/Blog" },
           ].map((item, index) => (
             <li key={index} className="mb-3">
               <Link href={item.link} className="hover:text-orange-500 transition">
@@ -240,11 +240,11 @@ export default function Navbar() {
         <div className="fixed top-[70px] left-0 w-full h-screen bg-white z-40 p-4 md:hidden">
           <ul className="text-gray-800 text-lg space-y-4">
             {[
-              { name: "Home", link: "/Home" },
+              { name: "Home", link: "/" },
               { name: "Destination", link: "/MountainMyTripGallery" },
-              { name: "Treks", link: "/home" },
-              { name: "Stays with us", link: "/Stays with us" },
-              { name: "Blog", link: "/" },
+              { name: "Treks", link: "/" },
+              { name: "Stays with us", link: "/" },
+              { name: "Blog", link: "/Blog" },
               { name: "Book Your Stay", link: "/Contact" },
             ].map((item, index) => (
               <li
