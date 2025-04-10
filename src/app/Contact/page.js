@@ -28,7 +28,7 @@ export default function ContactForm() {
   return (
     <>
       <div
-        className="bg-cover mt-16 bg-center h-[300px] flex items-center justify-center text-white text-center shadow-lg"
+        className="bg-cover mt-12 bg-center h-[300px] flex items-center justify-center text-white text-center shadow-lg"
         style={{
           backgroundImage: "url('deal10.jpg')",
         }}

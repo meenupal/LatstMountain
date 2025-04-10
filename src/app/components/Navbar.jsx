@@ -243,7 +243,7 @@ export default function Navbar() {
               { name: "Home", link: "/" },
               { name: "Destination", link: "/MountainMyTripGallery" },
               { name: "Treks", link: "/" },
-              { name: "Stays with us", link: "/" },
+              { name: "Stays with us", link: "/Stays with us" },
               { name: "Blog", link: "/Blog" },
               { name: "Book Your Stay", link: "/Contact" },
             ].map((item, index) => (

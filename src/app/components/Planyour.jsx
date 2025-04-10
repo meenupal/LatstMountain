@@ -40,7 +40,7 @@ export default function DiscountSection() {
         <p className="text-gray-600 mt-4">
           There are many variations of passages of available, but the majority
           have suffered alteration in some form, by injected hum randomized
-          words which don’t look even slightly.HimTrek offers curated travel
+          words which don’t look even slightly.MountainMyTrip offers curated travel
           adventures designed to bring you closer to nature and culture.
         </p>
         <ul className="mt-6 space-y-3 text-left">
@@ -52,7 +52,7 @@ export default function DiscountSection() {
 
           <li className="flex items-center text-gray-800">
             <LiaHandPointRightSolid className="text-[#F54900] mr-2" /> At
-            HimTrek, we believe in providing genuine and informative travel
+            MountainMyTrip, we believe in providing genuine and informative travel
             guidance
           </li>
           <li className="flex items-center text-gray-800">
