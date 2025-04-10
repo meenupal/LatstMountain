@@ -53,7 +53,7 @@ export default function Navbar() {
             { name: "Home", link: "/Home" },
             { name: "Destination", link: "/MountainMyTripGallery" },
             { name: "Treks", link: "/Home" },
-            { name: "Blog", link: "/Home" },
+            { name: "Blog", link: "/Blog" },
           ].map((item, index) => (
             <li
               key={index}
@@ -108,9 +108,9 @@ export default function Navbar() {
             {[
               { name: "Home", link: "/Home" },
               { name: "Destination", link: "/MountainMyTripGallery" },
-              { name: "Treks", link: "/home" },
+              { name: "Treks", link: "/Home" },
               { name: "Stays with us", link: "/Stays with us" },
-              { name: "Blog", link: "/" },
+              { name: "Blog", link: "/Blog" },
               { name: "Book Your Stay", link: "/Contact" },
           
             ].map((item, index) => (
