@@ -213,7 +213,7 @@ export default function Navbar() {
       name: "Destination",
       link: "/MountainMyTripGallery",
       dropdown: [
-        { name: "Top Places", link: "/" },
+        { name: "Top Places", link: "/MountainMyTripGallery" },
         { name: "Hidden Gems", link: "/" },
       ],
     },
@@ -311,7 +311,7 @@ export default function Navbar() {
           <li>
             <Link
               href="/Contact"
-              className="bg-[#F54900] text-white px-5 py-2 rounded-full hover:bg-orange-600 transition"
+              className="bg-[#F54900] text-white px-5 py-2 rounded-full hover:bg-[#f54a00a1] transition"
             >
               Book Your Stay
             </Link>
@@ -365,7 +365,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/Contact"
-                className="block bg-[#F54900] text-white text-center py-2 rounded-full hover:bg-orange-600 transition"
+                className="block bg-[#F54900] text-white text-center py-2 rounded-full hover:bg-[#f54a00a1] transition"
                 onClick={toggleMobileMenu}
               >
                 Book Your Stay

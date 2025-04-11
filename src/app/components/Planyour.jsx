@@ -19,7 +19,7 @@ export default function DiscountSection() {
             className="rounded-lg "
           />
           {/* Discount Badge */}
-          <div className="absolute top-6 left-6 bg-[#F54900] text-white px-4 py-2 rounded-md text-xl font-bold">
+          <div className="absolute top-12 left-12 bg-[#F54900] text-white px-4 py-2 rounded-md text-xl font-bold">
             30% Discount
           </div>
           {/* Call Button */}
@@ -63,7 +63,7 @@ export default function DiscountSection() {
           </li>
 
           <li className="flex items-center text-gray-800">
-            <LiaHandPointRightSolid className="text-[#F54900] mr-2  h-[20px] w-[20px]" />
+            <LiaHandPointRightSolid className="text-[#F54900] mr-2  h-[23px] w-[23px]" />
             Hassle-Free Experience – We take care of everything, from permits to
             accommodations, so you can focus on enjoying your trek.
           </li>

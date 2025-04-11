@@ -70,7 +70,7 @@ export default function SarPassTrek() {
 
 📌 Please reach out for confirmation and next steps.`;
 
-    const whatsappURL = `https://wa.me/918868857038?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/9123456156?text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappURL, "_blank");
@@ -211,7 +211,7 @@ export default function SarPassTrek() {
           <div className="text-sm text-green-600 font-bold mb-2">Save 20%</div>
           <div className="text-xl font-bold text-red-600 mb-4">
             Starting From:{" "}
-            <span className="line-through text-gray-400">₹12,000</span>{" "}
+            <span className=" text-gray-600">₹12,000</span>{" "}
             <span>/ Per Person</span>
           </div>
 

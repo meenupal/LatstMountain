@@ -10,7 +10,7 @@ import {
 export default function Footer() {
   return (
     <>
-      <footer className="bg-[#313041] text-gray-200 py-8 px-6 md:px-20">
+      <footer className="bg-[#393849] text-gray-200 py-8 px-6 md:px-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Logo & Description */}
           <div className="flex flex-col items-start">
@@ -106,7 +106,7 @@ export default function Footer() {
             href="https://wa.me/9837218345"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-white text-black px-4 py-2 rounded-lg shadow-md hover:bg-[#847ce0] hover:text-white transition-all duration-300 ease-in-out"
+            className="flex items-center gap-2  bg-white text-black px-4 py-2 rounded-lg shadow-md hover:bg-[#847ce0] hover:text-white transition-all duration-300 ease-in-out"
             title="Chat with us on WhatsApp"
           >
             <h1 className="font-medium text-sm md:text-base">Click Now</h1>

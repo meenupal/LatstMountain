@@ -5,23 +5,23 @@ import { FaArrowRight } from "react-icons/fa";
 
 const destinations = [
   {
-    title: "Alpine Retreat",
-    description: "Escape to the serene Alpine Retreat.",
-    image: "/deal5.jpg",
+    title: "Yamunotri",
+    description: "The sacred origin of the River Yamuna, nestled in the serene Himalayas.",
+    image: "/deal27.jpg",
   },
   {
-    title: "Azure Heights Haven",
-    description: "Discover Azure Heights Haven, a perfect escape.",
-    image: "/deal6.jpg",
+    title: "Gangotri",
+    description: "Birthplace of the holy Ganga, where divinity flows through every stream.",
+    image: "/deal38.jpg",
   },
   {
-    title: "Serene Riviera Retreat",
-    description: "Serene Riviera Retreat offers tranquility & coastal beauty.",
-    image: "/deal7.jpg",
+    title: "Kedarnath",
+    description: "A spiritual abode of Lord Shiva, surrounded by majestic snow-capped peaks.",
+    image: "/deal36.jpg",
   },
   {
-    title: "Tranquil Haven",
-    description: "Tranquil Haven for a serene escape.",
+    title: "Badrinath",
+    description: "The divine dwelling of Lord Vishnu, echoing peace and eternal devotion.",
     image: "/deal34.jpg",
   },
 ];
