@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-// import Whatsappicon  from "./components/Whatsappicon";
+import Whatsappicon  from "./components/Whatsappicon";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
-        {/* <Whatsappicon/> */}
+        <Whatsappicon/>
         <Footer />
       </body>
     </html>

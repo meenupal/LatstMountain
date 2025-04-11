@@ -12,7 +12,7 @@ export default function DiscountSection() {
         <div className="relative">
           {/* Background Image */}
           <Image
-            src="/deal13.jpg" // Replace with your actual image path
+            src="/deal35.png" // Replace with your actual image path
             alt="Eiffel Tower"
             width={600}
             height={500}

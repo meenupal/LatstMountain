@@ -22,7 +22,7 @@ const destinations = [
   {
     title: "Tranquil Haven",
     description: "Tranquil Haven for a serene escape.",
-    image: "/deal8.jpg",
+    image: "/deal34.jpg",
   },
 ];
 
@@ -67,9 +67,9 @@ export default function Destinations() {
             </div>
 
             {/* Arrow Button */}
-            <div className="absolute bottom-4 right-4 bg-orange-500 p-2 rounded-full text-white flex items-center justify-center hover:bg-orange-600 transition duration-300">
+            {/* <div className="absolute bottom-4 right-4 bg-orange-500 p-2 rounded-full text-white flex items-center justify-center hover:bg-orange-600 transition duration-300">
               <FaArrowRight size={16} />
-            </div>
+            </div> */}
           </div>
         ))}
       </div>

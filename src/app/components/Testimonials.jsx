@@ -226,12 +226,15 @@ const Testimonials = () => {
     );
 
   return (
-    <section className="bg-white px-6 py-12 md:py-24 lg:py-24 text-gray-800 overflow-hidden">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-wider relative inline-block">
-        <span className="absolute text-6xl md:text-5xl opacity-10 top-[-20px] left-1/2 transform -translate-x-1/2 z-0">
+    <section className="bg-white px-6 py-4 md:py-8 lg:py-12 text-gray-800 overflow-hidden">
+      <div className="text-center mb-8">
+        <h2 className="text-2xl md:text-4xl font-bold uppercase tracking-wider relative inline-block">
+        {/* <span className="absolute text-6xl md:text-5xl opacity-10 top-[-20px] left-1/2 transform -translate-x-1/2 z-0">
             Testimonials
-          </span>
+          </span> */}
+           <p className="text-3xl text-orange-500 font-semibold uppercase tracking-wide">
+       Testimonials
+      </p>
           <span className="text-black relative z-10">
             What They Say About MountainMyTrip
           </span>
@@ -300,7 +303,7 @@ const Testimonials = () => {
       </div>
 
       {/* Achievements */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mt-16">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mt-12">
         <div>
           <PiBackpackFill className="text-orange-500 text-4xl mx-auto mb-2" />
           <h3 className="text-2xl font-bold">
