@@ -160,6 +160,7 @@ export default function Navbar() {
   ];
 
   return (
+    <>
     <nav className="bg-white px-4 fixed top-0 left-0 w-full h-[60px] z-50 border-b border-gray-200">
       <div className="max-w-7xl mx-auto flex justify-between items-center h-full">
         {/* Logo */}
@@ -227,7 +228,7 @@ export default function Navbar() {
           <li className="mb-3">
             <Link
               href="/Contact"
-              className="bg-[#F54900] text-white px-5 py-2 rounded-full font-semibold hover:bg-orange-600 transition"
+              className="bg-[#F54900] text-white px-5 py-1 rounded-full font-semibold hover:bg-orange-600 transition"
             >
               Book Your Stay
             </Link>
@@ -258,7 +259,14 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
+        
+        
+
       )}
     </nav>
+    </>
   );
 }
+
+
+

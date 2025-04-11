@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Aboutsection() {
   return (
-    <section className="px-6 md:px-20 py-12 flex flex-col md:flex-row items-center justify-between">
+    <section className="px-6 md:px-28 py-12 flex flex-col md:flex-row items-center justify-between">
       {/* Text Section */}
       <div className="md:w-1/2 text-center md:text-left">
         <h2 className="text-2xl text-orange-500 font-semibold uppercase tracking-wide">
@@ -52,7 +52,7 @@ export default function Aboutsection() {
       {/* Image Section */}
       <div className="relative w-full md:w-1/2 mt-10 md:mt-0 flex justify-center">
         {/* Background Image */}
-        <div className="relative w-72 h-52 md:w-104 md:h-72 rounded-lg overflow-hidden">
+        <div className="relative w-72 h-52 md:w-112 md:h-88 rounded-lg overflow-hidden">
           <Image
             src="/deal23.jpg"
             alt="Hiker on a trail"
@@ -62,7 +62,7 @@ export default function Aboutsection() {
         </div>
 
         {/* Overlapping Image */}
-        <div className="absolute bottom-[-30px] left-[30px] md:bottom-[-40px] md:left-[50px] w-48 h-36 md:w-64 md:h-48 rounded-lg overflow-hidden shadow-lg border-4 border-white">
+        <div className="absolute bottom-[-30px] left-[30px]  md:bottom-[-40px] md:left-[50px] w-48 h-36 md:w-68 md:h-52 rounded-lg overflow-hidden shadow-lg border-4 border-white">
           <Image
             src="/deal21.jpg"
             alt="Camping tent"

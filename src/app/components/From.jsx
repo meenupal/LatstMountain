@@ -262,7 +262,7 @@ export default function Form() {
       {/* Content */}
       <div
         className="relative flex flex-col justify-start items-center text-center text-white h-full px-6"
-        style={{ paddingTop: "25rem" }}
+        style={{ paddingTop: "24rem" }}
       >
         {/* Title & Subtitle */}
         <div className="mb-4">
