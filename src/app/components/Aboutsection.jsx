@@ -12,27 +12,29 @@ export default function Aboutsection() {
           About Us
         </h2>
         <h3 className="text-2xl md:text-4xl font-bold mt-2">
-          Why Choose Mountain My Trip for Your next Adventures
+          Experience the Thrill of Mountain Trekking in India
         </h3>
         <p className="text-gray-600 mt-4 leading-relaxed pb-2 ">
-          At Push, we believe that every journey should be more than just a
-          trip—it should be a story worth telling. Our passion for exploration
-          and adventure drives us to curate extraordinary travel experiences
-          that immerse you in breathtaking landscapes, vibrant cultures, and
-          unforgettable moments. From serene mountain treks to adrenaline-packed
-          expeditions, we ensure every journey is designed with meticulous
-          attention to detail, safety, and comfort. Whether you're a seasoned
-          adventurer or a first-time explorer, Push is your trusted companion in
-          discovering the world’s most awe-inspiring destinations. With a team
-          of expert guides, personalized itineraries, and a commitment to
-          responsible travel, we go beyond the ordinary to create experiences
-          that inspire and transform. Join us at Push, and let’s embark on a
-          journey that leaves a lasting imprint on your soul. Your adventure
-          begins here. Are you ready to push your limits?
+          Explore the thrilling world of mountain trekking in India, where the
+          majestic Himalayas promise adventure like no other. If you seek
+          breathtaking landscapes, challenging trails, and mesmerizing views,
+          trekking in Uttarakhand is the perfect escape. Imagine snow-capped
+          peaks, lush meadows, and charming villages—this region is a trekker’s
+          paradise waiting to be explored.<br></br><br></br>
+
+           Among Uttarakhand’s hidden gems are
+          the Dinar Top Trek and Gulabi Kantha Trek. Dinar Top offers serenity
+          and panoramic Himalayan views, making it ideal for both beginners and
+          seasoned trekkers. Meanwhile, Gulabi Kantha stuns with its vibrant
+          alpine meadows and spectacular 360° vistas, a dream for photographers.
+          Join us on an unforgettable journey with expert guides, well-planned
+          itineraries, and a strong commitment to safety. Whether you're a
+          first-time trekker or a mountain enthusiast, let trekking in
+          Uttarakhand be your next great adventure!
         </p>
 
-        {/* Stats */} 
-         <div className="flex justify-center md:justify-start gap-6 my-4">
+        {/* Stats */}
+        <div className="flex justify-center md:justify-start gap-6 my-4">
           <div>
             <p className="text-2xl font-bold">10K</p>
             <p className="text-gray-500">Success Trips</p>
@@ -44,9 +46,12 @@ export default function Aboutsection() {
         </div>
 
         {/* Button */}
-         <Link href="./Aboutus" className="mt-32 bg-[#F54900] text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-400 transition duration-300">
+        <Link
+          href="./Aboutus"
+          className="mt-32 bg-[#F54900] text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-400 transition duration-300"
+        >
           Explore Now
-        </Link> 
+        </Link>
       </div>
 
       {/* Image Section */}

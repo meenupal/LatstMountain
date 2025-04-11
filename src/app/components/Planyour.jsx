@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -34,44 +33,49 @@ export default function DiscountSection() {
       {/* Right Side - Text Content */}
       <div className="w-full md:w-1/2 text-center md:text-left mt-10 md:mt-0">
         <h3 className="text-[#F54900] italic text-lg">Get to know us</h3>
-        <h2 className="text-3xl font-bold text-gray-900 mt-2">
-          Plan Your Trip with <span className="text-[#F54900]">MountainMyTrip</span>
+        <h2 className="text-xl font-bold text-gray-900 mt-2">
+          Plan Your Adventure with 
+          <span className="text-[#F54900]">MountainMyTrip</span>
         </h2>
         <p className="text-gray-600 mt-4">
-          There are many variations of passages of available, but the majority
-          have suffered alteration in some form, by injected hum randomized
-          words which don’t look even slightly.MountainMyTrip offers curated travel
-          adventures designed to bring you closer to nature and culture.
+          Get ready for an unforgettable adventure with MountainMyTrip, your
+          go-to partner for mountain trekking in India! We specialize in
+          expertly guided treks through Uttarakhand, making sure you have a
+          safe, smooth, and thrilling experience surrounded by the stunning
+          Himalayas.
         </p>
         <ul className="mt-6 space-y-3 text-left">
           <li className="flex items-center text-gray-800">
-            <LiaHandPointRightSolid className="text-[#F54900] mr-2" /> In the
-            digital age, travel content is widely available, but not always
-            authentic.
+            <LiaHandPointRightSolid className="text-[#F54900] mr-2 h-[20px] w-[20px]" />
+            Expert-Guided Treks – Our experienced guides prioritize your safety
+            while sharing their local knowledge.
           </li>
 
           <li className="flex items-center text-gray-800">
-            <LiaHandPointRightSolid className="text-[#F54900] mr-2" /> At
-            MountainMyTrip, we believe in providing genuine and informative travel
-            guidance
+            <LiaHandPointRightSolid className="text-[#F54900] mr-2 h-[20px] w-[20px]" />
+            Customized Itineraries – We create personalized plans that cater to
+            both beginners and seasoned trekkers.
           </li>
           <li className="flex items-center text-gray-800">
-            <LiaHandPointRightSolid className="text-[#F54900] mr-2" /> A
-            well-informed traveler is an empowered traveler, and that’s what we
-            aim to build.
+            <LiaHandPointRightSolid className="text-[#F54900] mr-2  h-[20px] w-[20px]" /> Scenic
+            Trails – Discover breathtaking landscapes, from lush alpine meadows
+            to majestic snow-capped peaks
           </li>
 
           <li className="flex items-center text-gray-800">
-            <LiaHandPointRightSolid className="text-[#F54900] mr-2" /> Invest in
-            your simply neighborhood
+            <LiaHandPointRightSolid className="text-[#F54900] mr-2  h-[20px] w-[20px]" />
+            Hassle-Free Experience – We take care of everything, from permits to
+            accommodations, so you can focus on enjoying your trek.
           </li>
           <li className="flex items-center text-gray-800">
-            <LiaHandPointRightSolid className="text-[#F54900] mr-2" /> Support
-            people in free text extreme need
+            <LiaHandPointRightSolid className="text-[#F54900] mr-2  h-[20px] w-[20px]" /> Safety
+            First – We’re equipped with all the essential gear and emergency
+            support to keep you safe.
           </li>
           <li className="flex items-center text-gray-800">
-            <LiaHandPointRightSolid className="text-[#F54900] mr-2" /> Largest
-            global industrial business community
+            <LiaHandPointRightSolid className="text-[#F54900] mr-2  h-[20px] w-[20px]" />
+            Let MountainMyTrip be your ticket to an incredible trekking
+            adventure in Uttarakhand!
           </li>
         </ul>
         {/* Button */}

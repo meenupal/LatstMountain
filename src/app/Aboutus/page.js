@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
-
 const historyData = [
   {
     year: "2023",
@@ -89,32 +88,27 @@ export default function About() {
           <h1 className="font-bold flex gap-2 flex-col mt-2 items-center sm:items-end sm:flex-row  py-4 text-6xl md:text-5xl text-blue-400"></h1>
 
           <p className="text-xl ml-1.5 text-[#F54900] font-semibold">
-            About Himalayan Trekking
+            Plan Your Adventure with MountainMyTrip
           </p>
           <div className=" sm:mt-5  text-gray-600 space-y-8 sm:border-t-1">
             {/* Paragraph 1 */}
             <div className="p-2  rounded-lg ">
               <p className="text-base  sm:text-[16px] sm:block ">
-                At Himalayan Trekking, we are passionate about exploring the
-                grandeur of the Himalayas and bringing unforgettable trekking
-                experiences to adventurers across the world. Our journey is
-                driven by the love for nature, adventure, and the thrill of
-                discovering remote and breathtaking landscapes. With a deep
-                understanding of the Himalayan terrain, we specialize in
-                curating treks that cater to beginners, seasoned trekkers, and
-                extreme adventurers. Whether you seek a serene walk through lush
-                valleys or a challenging ascent to snow-covered peaks, we ensure
-                that every expedition is safe, memorable, and enriching. When
-                humans set their feet and eyes on the Himalaya, it is a romantic
-                meeting between the Earth´s youngest species and the earth´s
-                youngest mountain. As the Himalayan mountains have developed on
-                Earth, the evolution of humans has also been accompanied by the
-                making of an inner Himalaya. Every human has a Himalaya within
-                himself or herself. It is the peak of human potential and
-                challenge as well as a place of silence and peace. Our Journey
-                started in the humble roots & persistent efforts of an authentic
-                mountain trek leader, Bachan Rana, who founded Himalaya Shelter
-                in 2013.
+                Get ready for an unforgettable adventure with MountainMyTrip,
+                your go-to partner for mountain trekking in India! We specialize
+                in expertly guided treks through Uttarakhand, making sure you
+                have a safe, smooth, and thrilling experience surrounded by the
+                stunning Himalayas. Expert-Guided Treks – Our experienced guides
+                prioritize your safety while sharing their local knowledge.
+                Customized Itineraries – We create personalized plans that cater
+                to both beginners and seasoned trekkers. Scenic Trails –
+                Discover breathtaking landscapes, from lush alpine meadows to
+                majestic snow-capped peaks. Hassle-Free Experience – We take
+                care of everything, from permits to accommodations, so you can
+                focus on enjoying your trek. Safety First – We’re equipped with
+                all the essential gear and emergency support to keep you safe.
+                Let MountainMyTrip be your ticket to an incredible trekking
+                adventure in Uttarakhand!
               </p>
             </div>
           </div>

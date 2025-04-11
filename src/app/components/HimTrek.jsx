@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function HimTrek() {
   return (
-    <div className="w-full px-2 md:px-12 py-8">
+    <div className="w-full px-2 md:px-12 py-4">
       <div className="relative w-full h-[250px] md:h-[340px] rounded-3xl overflow-hidden border-2 border-orange-500">
         {/* Background Image */}
         <Image
