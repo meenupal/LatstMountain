@@ -235,7 +235,7 @@ const Testimonials = () => {
            <p className="text-3xl text-orange-500 font-semibold uppercase tracking-wide">
        Testimonials
       </p>
-          <span className="text-black relative z-10">
+          <span className="text-[#393849] relative z-10">
             What They Say About MountainMyTrip
           </span>
           {/* <span className="absolute text-6xl md:text-5xl opacity-10 top-[-20px] left-1/2 transform -translate-x-1/2 z-0">

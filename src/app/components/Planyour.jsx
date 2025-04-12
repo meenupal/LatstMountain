@@ -12,18 +12,18 @@ export default function DiscountSection() {
         <div className="relative">
           {/* Background Image */}
           <Image
-            src="/deal35.png" // Replace with your actual image path
+            src="/deal39.png" // Replace with your actual image path
             alt="Eiffel Tower"
             width={600}
             height={500}
             className="rounded-lg "
           />
           {/* Discount Badge */}
-          <div className="absolute top-12 left-12 bg-[#F54900] text-white px-4 py-2 rounded-md text-xl font-bold">
+          <div className="absolute top-12 left-4 bg-[#F54900] text-white px-4 py-2 rounded-md text-xl font-bold">
             30% Discount
           </div>
           {/* Call Button */}
-          <div className="absolute bottom-6 left-6 bg-white px-4 py-2 rounded-lg shadow-lg flex items-center space-x-2">
+          <div className="absolute bottom-6 left-4 mt-12 bg-white px-4 py-2 rounded-lg shadow-lg flex items-center space-x-2">
             <FaPhoneAlt className="text-[#F54900]" />
             <span className="font-semibold">666-888-0000</span>
           </div>
@@ -31,7 +31,7 @@ export default function DiscountSection() {
       </div>
 
       {/* Right Side - Text Content */}
-      <div className="w-full md:w-1/2 text-center md:text-left mt-10 md:mt-0">
+      <div className="w-full md:w-1/2 text-center md:pl-4 md:text-left mt-10 md:mt-0">
         <h3 className="text-[#F54900] italic text-lg">Get to know us</h3>
         <h2 className="text-xl font-bold text-gray-900 mt-2">
           Plan Your Adventure with 

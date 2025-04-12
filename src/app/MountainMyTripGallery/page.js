@@ -210,8 +210,8 @@ export default function SarPassTrek() {
           </h3>
           <div className="text-sm text-green-600 font-bold mb-2">Save 20%</div>
           <div className="text-xl font-bold text-red-600 mb-4">
-            Starting From:{" "}
-            <span className=" text-gray-600">₹12,000</span>{" "}
+            Starting From:
+            <span className=" text-gray-600">₹12,000</span>
             <span>/ Per Person</span>
           </div>
 

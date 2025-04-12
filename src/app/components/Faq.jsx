@@ -35,17 +35,17 @@ const Faq = () => {
       answer:
         "You can cancel up to 7 days before the trek start date for a partial refund. For full details, please refer to our cancellation policy on the booking page.",
     },
-    {
-      question: "How safe is the trek? Are guides trained?",
-      answer:
-        "Your safety is our top priority. Our trek leaders are certified, trained in first-aid, and experienced in handling high-altitude conditions. Emergency protocols are in place throughout the journey.",
-    },
+    // {
+    //   question: "How safe is the trek? Are guides trained?",
+    //   answer:
+    //     "Your safety is our top priority. Our trek leaders are certified, trained in first-aid, and experienced in handling high-altitude conditions. Emergency protocols are in place throughout the journey.",
+    // },
   ];
 
   return (
     <section className="px-4 sm:px-6 lg:px-16 py-12 bg-gray-50">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12 text-gray-800">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12 text-[#393849]">
           Frequently Asked Questions
         </h2>
 
@@ -62,7 +62,7 @@ const Faq = () => {
                 <span>{faq.question}</span>
                 <FaChevronDown
                   className={`transition-transform duration-300 ${
-                    openIndex === index ? "rotate-180 text-orange-500" : "text-gray-400"
+                    openIndex === index ? "rotate-180 text-orange-500" : "text-[#393849]"
                   }`}
                 />
               </button>
