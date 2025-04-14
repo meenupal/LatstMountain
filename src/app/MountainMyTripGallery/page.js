@@ -596,18 +596,3 @@ export default function SarPassTrek() {
     </>
   );
 }
-
-// 1. Gulabi Kota Trek
-// 2. Dinda Top
-// 3. Kedarkantha Trek
-// 4. Supai Bugyal
-// 5. Tarsar Marsar
-// 6. Valley of Flowers
-// 7. Brahmatal
-// 8. Kashmir Pass
-// 9. Phari Dham
-// 10. Pangot Tungnath
-// 11. Valley of Flowers Trek
-// 12. Dayara Trek
-// 13. Rupin Pass
-// 14. Chandrashila Trek

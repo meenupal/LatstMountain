@@ -22,7 +22,7 @@ const destinations = [
   {
     title: "Badrinath",
     description: "The divine dwelling of Lord Vishnu, echoing peace and eternal devotion.",
-    image: "/deal34.jpg",
+    image: "/deal40.jpg",
   },
 ];
 

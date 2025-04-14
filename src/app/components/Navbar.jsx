@@ -211,7 +211,7 @@ export default function Navbar() {
     },
     {
       name: "Destination",
-      link: "/MountainMyTripGallery",
+      link: "#",
       dropdown: [
         { name: "Top Places", link: "/MountainMyTripGallery" },
         { name: "Hidden Gems", link: "/" },

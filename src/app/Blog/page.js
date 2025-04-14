@@ -403,7 +403,7 @@ export default function Blog() {
         </div>
 
         {/* Pagination */}
-        <div className="mt-16 flex justify-center gap-3">
+        {/* <div className="mt-16 flex justify-center gap-3">
           <button className="px-4 py-2 text-gray-500 hover:text-teal-700 hover:bg-gray-100 rounded-lg">
             ← Previous
           </button>
@@ -420,7 +420,7 @@ export default function Blog() {
           <button className="px-4 py-2 text-gray-500 hover:text-teal-700 hover:bg-gray-100 rounded-lg">
             Next →
           </button>
-        </div>
+        </div> */}
       </section>
 
       {/* Newsletter */}
