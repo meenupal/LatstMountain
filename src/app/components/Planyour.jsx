@@ -23,10 +23,10 @@ export default function DiscountSection() {
             30% Discount
           </div>
           {/* Call Button */}
-          <div className="absolute bottom-6 left-4 mt-12 bg-white px-4 py-2 rounded-lg shadow-lg flex items-center space-x-2">
+          {/* <div className="absolute bottom-6 left-4 mt-12 bg-white px-4 py-2 rounded-lg shadow-lg flex items-center space-x-2">
             <FaPhoneAlt className="text-[#F54900]" />
             <span className="font-semibold">666-888-0000</span>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -78,10 +78,12 @@ export default function DiscountSection() {
             adventure in Uttarakhand!
           </li>
         </ul>
-        {/* Button */}
-        {/* <button className="mt-6 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg text-lg font-semibold hover:bg-red-600 transition duration-300">
-          BOOK WITH US NOW
+        {/* Button */} 
+       {/* <button className="mt-6 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg text-lg font-semibold hover:bg-red-600 transition duration-300">
+           <FaPhoneAlt className="text-[#F54900]" />
+            <span className="font-semibold">666-888-0000</span>
         </button> */}
+         
       </div>
     </section>
   );

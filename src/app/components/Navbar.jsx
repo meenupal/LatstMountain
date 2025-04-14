@@ -219,7 +219,7 @@ export default function Navbar() {
     },
     {
       name: "Treks",
-      link: "/Treks",
+      link: "/",
       dropdown: [
         { name: "Beginners Treks", link: "/Treks#beginner" },
         { name: "Moderate Treks", link: "/Treks#moderate" },

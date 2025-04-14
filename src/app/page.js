@@ -7,6 +7,7 @@ import Planyour from "./components/Planyour"
 import HimTrek from "./components/HimTrek";
 import Testimonials from "./components/Testimonials";
 import Faq from "./components/Faq";
+// import TripCards from "./components/TripCards";
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
     <Testimonials/>
     <HimTrek/>
     <Faq/>
+    {/* <TripCards/> */}
     
     
     </main>
