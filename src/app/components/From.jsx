@@ -219,6 +219,7 @@ export default function Form() {
   const [location, setLocation] = useState("");
   const [date, setDate] = useState("");
   const [checkout, setCheckout] = useState("");
+  const [checkin, setCheckin] = useState('');
   const [currentImage, setCurrentImage] = useState(0);
 
   const slides = [
@@ -296,11 +297,11 @@ export default function Form() {
                 onChange={(e) => setDate(e.target.value)}
               />
             </div> */}
-                        <div className="relative flex items-center px-4 py-3 w-full">
+            <div className="relative flex items-center px-4 py-3 w-full">
   <FaCalendarAlt className="text-gray-500 mr-2" />
   <div className="relative w-full">
     {/* Fake Placeholder */}
-    {!checkout && (
+    {!checkin && (
       <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm pointer-events-none z-10">
         Check IN
       </span>
@@ -309,11 +310,11 @@ export default function Form() {
       type="date"
       className="w-full outline-none bg-transparent text-sm md:text-base px-3 py-2 border border-gray-300 rounded-md text-gray-700 z-20"
       value={checkin}
-      onChange={(e) => setCheckout(e.target.value)}
+      onChange={(e) => setCheckin(e.target.value)} 
     />
   </div>
 </div>
-
+                      
             {/* Check-out Input */}
             <div className="relative flex items-center px-4 py-3 w-full">
   <FaCalendarAlt className="text-gray-500 mr-2" />
