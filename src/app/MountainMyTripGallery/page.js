@@ -326,6 +326,7 @@ import {
   FaChevronUp,
 } from "react-icons/fa";
 import HimaliyeMyTripCarousel from "../components/HimaliyeMyTrip";
+import HimTrek from "../components/HimTrek";
 
 const destinations = [
   { name: "", src: "/deal26.jpg", gridClass: "lg:col-span-2" },
@@ -593,6 +594,7 @@ export default function SarPassTrek() {
       </section>
 
       <HimaliyeMyTripCarousel />
+      <HimTrek/>
     </>
   );
 }

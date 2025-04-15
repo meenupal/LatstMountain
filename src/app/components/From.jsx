@@ -1,4 +1,3 @@
-
 // "use client";
 
 // import { useState, useEffect } from "react";
@@ -211,14 +210,10 @@
 //   );
 // }
 
-
 "use client";
 
 import { useState, useEffect } from "react";
-import {
-  FaCalendarAlt,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
+import { FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Form() {
   const [location, setLocation] = useState("");
@@ -275,7 +270,9 @@ export default function Form() {
         </div>
 
         {/* Search Form */}
-        <div className="bg-white text-gray-700 p-4 rounded-lg shadow-lg flex flex-col md:flex-row items-center w-full max-w-lg md:max-w-3xl">
+        {/* Search Form */}
+        <div className="bg-white text-gray-700 p-4 rounded-lg shadow-lg flex flex-col md:flex-row items-center w-full max-w-lg md:max-w-4xl">
+          {/* <div className="bg-white text-gray-700 p-4 rounded-lg shadow-lg flex flex-col md:flex-row items-center w-full max-w-lg md:max-w-3xl"> */}
           {/* Location Input */}
           <div className="flex items-center border-b md:border-b-0 md:border-r px-4 py-3 w-full">
             <FaMapMarkerAlt className="text-gray-500 mr-2" />
