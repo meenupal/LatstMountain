@@ -287,10 +287,11 @@ export default function Form() {
 
           {/* Date Input */}
           <div className="flex items-center border-b md:border-b-0 md:border-r px-4 py-3 w-full">
-            <FaCalendarAlt className="text-gray-500 mr-2" />
+            <FaCalendarAlt className="text-gray-700 mr-2" />
             <input
               type="date"
-              className="w-full outline-none bg-white text-sm md:text-base px-2 py-2 border border-gray-300 rounded-md"
+              className="w-full outline-none bg-transparent text-sm md:text-base px-2 py-2 border border-gray-300 rounded-md"
+              placeholder="Check IN"
               value={date}
               onChange={(e) => setDate(e.target.value)}
             />
@@ -302,6 +303,7 @@ export default function Form() {
             <input
               type="date"
               className="w-full outline-none bg-transparent text-sm md:text-base px-2 py-2 border border-gray-300 rounded-md"
+              placeholder="Check OUT"
               value={checkout}
               onChange={(e) => setCheckout(e.target.value)}
             />
