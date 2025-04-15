@@ -303,18 +303,19 @@ export default function Form() {
   <div className="relative w-full">
     {/* Fake Placeholder */}
     {!checkout && (
-      <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm pointer-events-none">
+      <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm pointer-events-none z-10">
         Check OUT
       </span>
     )}
     <input
       type="date"
-      className="w-full outline-none bg-transparent text-sm md:text-base px-3 py-2 border border-gray-300 rounded-md relative z-10"
+      className="w-full outline-none bg-transparent text-sm md:text-base px-3 py-2 border border-gray-300 rounded-md text-gray-700 z-20"
       value={checkout}
       onChange={(e) => setCheckout(e.target.value)}
     />
   </div>
 </div>
+
 
           {/* Send Button */}
           <a href="https://wa.me/1234567891" target="_blank">
