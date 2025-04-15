@@ -290,7 +290,7 @@ export default function Form() {
             <FaCalendarAlt className="text-gray-500 mr-2" />
             <input
               type="date"
-              className="w-full outline-none bg-transparent text-sm md:text-base px-2 py-2 border border-gray-300 rounded-md"
+              className="w-full outline-none bg-white text-sm md:text-base px-2 py-2 border border-gray-300 rounded-md"
               value={date}
               onChange={(e) => setDate(e.target.value)}
             />
