@@ -675,7 +675,7 @@ const HimaliyeMyTripCarousel = () => {
         modules={[Autoplay]}
         loop={true}
         autoplay={{
-          delay: 1000,
+          delay: 2000,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
