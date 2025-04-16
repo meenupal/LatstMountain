@@ -86,10 +86,10 @@ export default function PindariGlacierTrek() {
     <>
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 mt-16">
-        <h2 className="text-4xl font-semibold text-center text-gray-800 mb-10 underline">
-          Discover the{" "}
+        {/* <h2 className="text-4xl font-semibold text-center text-gray-800 mb-10 underline">
+          Discover the
           <span className="text-[#F54900]">Pindari Glacier Trek</span>
-        </h2>
+        </h2> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 auto-rows-[220px] md:auto-rows-[250px]">
           {destinations.map((item, index) => (
             <div
