@@ -303,7 +303,7 @@ const Testimonials = () => {
       </div>
 
       {/* Achievements */}
-      <div className="grid grid-cols-2 md:grid-cols-4 md:px-12  text-center mt-12">
+      <div className="grid grid-cols-2 md:grid-cols-4 md:px-12 md:mt-[77px] text-center mt-12">
         <div>
           <PiBackpackFill className="text-orange-500 text-4xl mx-auto mb-2" />
           <h3 className="text-2xl font-bold">

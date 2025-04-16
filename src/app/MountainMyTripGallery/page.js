@@ -352,15 +352,15 @@ const itinerary = [
     content: `• Trek back to basecamp. Farewell to the Himalayas.`,
   },
   {
-    title: "Day1: Gulabi Kantha Trek in Uttarakhand – A Hidden Gem",
+    title: "Day 4: Gulabi Kantha Trek in Uttarakhand – A Hidden Gem",
     content: `• Untouched Beauty: Still relatively unexplored\n• Location: Garhwal Himalayas, Uttarakhand\n• Breathtaking panoramic views\n• Lush green meadows, wildflowers, dense forests`,
   },
   {
-    title: "Day 2: Higher Elevation and Scenic Views",
+    title: "Day 5: Higher Elevation and Scenic Views",
     content: `• Higher elevation climbs, forest trails, and local encounters.`,
   },
   {
-    title: "Day 3: Return and Final Day",
+    title: "Day 6: Return and Final Day",
     content: `• Trek back to basecamp. Farewell to the Himalayas.`,
   },
 ];

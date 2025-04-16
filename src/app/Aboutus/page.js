@@ -1,8 +1,8 @@
 import React from "react";
 import {
   MapPin,
-  Compass,
-  Hiking,
+  Compass, 
+  Hiking, 
   Mountain,
   Flag,
   Footprints,
@@ -50,13 +50,13 @@ export default function About() {
     <div className="">
       {/* Hero Section */}
       <div
-        className="bg-cover mt-20 bg-center h-[300px] flex items-center justify-center text-white text-center shadow-lg"
+        className="bg-cover mt-12 bg-center h-[300px] flex items-center justify-center text-white text-center shadow-lg"
         style={{
           backgroundImage: "url('deal73.jpg')",
         }}
       >
-        <div className=" bg-opacity-50 p-10 rounded-xl">
-          <h1 className="text-5xl font-extrabold drop-shadow-lg">About Us</h1>
+        <div className=" bg-opacity-50 p-12 rounded-xl">
+          <h1 className="text-5xl  font-extrabold drop-shadow-lg">About Us</h1>
           <h3 className="text-lg mt-4 font-light">
             Discover the Himalayas like never before—one step at a time.
           </h3>
@@ -82,7 +82,7 @@ export default function About() {
           </h1>
         </div>
       </div> */}
-      <div className="flex flex-col  lg:flex-row justify-between items-center py-16 px-2 sm:px-12 lg:px-20 gap-12 sm:gap-20">
+      <div className="flex flex-col md:py-12 lg:flex-row justify-between items-center py-16 px-2 sm:px-12 lg:px-20 gap-12 sm:gap-20">
         {/* Left Section */}
         <div className="lg:w-[60%] text-center  lg:text-left">
           <h1 className="font-bold flex gap-2 flex-col mt-2 items-center sm:items-end sm:flex-row  py-4 text-6xl md:text-5xl text-blue-400"></h1>
@@ -195,7 +195,7 @@ export default function About() {
                 </div>
                 <p className="text-gray-700 mt-2 ml-14">{event.description}</p>
               </div>
-            ))}
+            ))}    http://localhost:3000
           </div>
         </div>
       </div>
