@@ -454,7 +454,7 @@ const itinerary = [
     content: `• Journey to Uttarkashi.\n• Visit Vishwanath Temple and explore town.\n• Overnight stay at Uttarkashi.`,
   },
   {
-    title: "Day 5: Uttarkashi - Gangotri - Uttarkashi",
+    title: "Day 5: Uttarkashi -Gangotri -Uttarkashi",
     content: `• Drive to Gangotri temple via Harsil.\n• Holy bath in Bhagirathi River.\n• Return to Uttarkashi.`,
   },
   {

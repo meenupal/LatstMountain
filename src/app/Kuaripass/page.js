@@ -28,20 +28,30 @@ const itinerary = [
     title: "Day 2: Drive to Dhak & Trek to Gulling",
     content: `• Scenic drive to Dhak village.\n• Begin trek through forests and mountain villages.\n• Overnight stay at Gulling campsite.`,
   },
+  // {
+  //   title: "Day 3:Trek from Gulling to Tali Forest Camp",
+  //   content: `• Ascend through oak and rhododendron forests.\n• Panoramic views of snow-capped peaks en route.\n• Camp in serene forest surroundings.`,
+  // },
+  // {
+  //   title: "Day 3: Trek from Tali to Kuari Pass and back to Tali",
+  //   content: `• Early morning start for summit push.\n• Stunning views from Kuari Pass of Nanda Devi and other peaks.\n• Return trek to Tali for overnight stay.`,
+  // },
   {
-    title: "Day 3: Trek from Gulling to Tali Forest Camp",
-    content: `• Ascend through oak and rhododendron forests.\n• Panoramic views of snow-capped peaks en route.\n• Camp in serene forest surroundings.`,
+    title: "Day 3: Tali to Kuari Pass & Return",
+    content: `• Early morning start for summit push.\n• Stunning views from Kuari Pass of Nanda Devi and other peaks.\n• Return trek to Tali for overnight stay.`,
   },
+  
+  
   {
     title: "Day 4: Tali to Kuari Pass Summit and back to Tali",
     content: `• Early morning trek to Kuari Pass (3,650m).\n• Witness sunrise over Nanda Devi, Dronagiri, and more.\n• Return to Tali for overnight camping.`,
   },
+  // {
+  //   title: "Day 4: Trek to Auli via Gorson Bugyal and Drive to Joshimath",
+  //   content: `• Walk through scenic Gorson meadows to Auli.\n• Drive back to Joshimath.\n• Celebrate successful trek and rest.`,
+  // },
   {
-    title: "Day 5: Trek to Auli via Gorson Bugyal and Drive to Joshimath",
-    content: `• Walk through scenic Gorson meadows to Auli.\n• Drive back to Joshimath.\n• Celebrate successful trek and rest.`,
-  },
-  {
-    title: "Day 6: Departure from Joshimath",
+    title: "Day 5: Departure from Joshimath",
     content: `• After breakfast, depart for Dehradun or onward journey.\n• End of memorable Kuari Pass adventure.`,
   },
 ];

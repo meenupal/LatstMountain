@@ -34,7 +34,7 @@ const itinerary = [
     content: `• Trek or drive down and head to Chopta.\n• Leisure day to explore and acclimatize.\n• Overnight stay in camps or guesthouse.` 
   },
   {
-    title: "Day 4: Trek to Chandrashila via Tungnath",
+    title: "Day 4:Trek to Chandrashila via Tungnath",
     content: `• Early morning trek to Tungnath (world's highest Shiva temple).\n• Continue to Chandrashila summit for panoramic Himalayan views.\n• Descend to Chopta for overnight stay.` 
   },
   {

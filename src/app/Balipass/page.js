@@ -40,14 +40,14 @@ const itinerary = [
     title: "Day 5: Ruinsara to Odari",
     content: `• Ascend towards Odari campsite with panoramic mountain views.\n• Acclimatize well at higher altitudes.\n• Prepare for the pass climb next day.`,
   },
-  {
-    title: "Day 6: Odari to Bali Pass Summit & Lower Dhamani",
-    content: `• Start early for the summit push to Bali Pass (4950m).\n• Witness stunning 360° Himalayan views.\n• Steep descent to Lower Dhamani for overnight stay.`,
-  },
-  {
-    title: "Day 7: Descend to Janki Chatti & Drive to Dehradun",
-    content: `• Trek down to Janki Chatti.\n• End the trek and drive to Dehradun.\n• Trip concludes with memories for a lifetime.`,
-  },
+  // {
+  //   title: "Day 6:Odari to Bali Pass Summit & Lower Dhamani",
+  //   content: `• Start early for the summit push to Bali Pass (4950m).\n• Witness stunning 360° Himalayan views.\n• Steep descent to Lower Dhamani for overnight stay.`,
+  // },
+  // {
+  //   title: "Day 7:Descend to Janki Chatti & Drive to Dehradun",
+  //   content: `• Trek down to Janki Chatti.\n• End the trek and drive to Dehradun.\n• Trip concludes with memories for a lifetime.`,
+  // },
 ];
 
 export default function BaliPassTrekAdventure() {

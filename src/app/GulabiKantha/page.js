@@ -309,14 +309,40 @@ const itinerary = [
     title: "Day 1: Arrival and Trek to Basecamp",
     content: `• Meet at the base location and get briefed by the trek leader.\n• Light trek to the basecamp surrounded by lush greenery.\n• Settle in for the night amidst the serene Himalayan foothills.`,
   },
+  // {
+  //   title: "Day 2: Trek to Gulabi Kantha A Hidden Gem",
+  //   content: `• Ascend through dense pine and oak forests.\n• Panoramic views of the Garhwal Himalayas.\n• Experience untouched landscapes with wildflowers and meadows.`,
+  // },
+  
+
+    {
+      title: "Day 2: Trek to Gulabi Kantha",
+      content: `• Hike through pine-oak forests.\n• Stunning Himalayan views.\n• Meadows dotted with wildflowers.`,
+    },
+    {
+      title: "Day 3: Explore & Return",
+      content: `• Explore Gulabi Kantha area.\n• Descend to basecamp.\n• Depart with lasting memories.`,
+    },
+  
+  
   {
-    title: "Day 2: Trek to Gulabi Kantha – A Hidden Gem",
-    content: `• Ascend through dense pine and oak forests.\n• Panoramic views of the Garhwal Himalayas.\n• Experience untouched landscapes with wildflowers and meadows.`,
-  },
-  {
-    title: "Day 3: Exploration and Return",
+    title: "Day 4: Exploration and Return",
     content: `• Morning exploration of Gulabi Kantha peak area.\n• Begin descent back to basecamp.\n• Share experiences and depart with memories.`,
   },
+      {
+      title: "Day 5: Basecamp to Village",
+      content: `• Trek down to nearby village.\n• Interact with locals & enjoy traditional food.\n• Overnight in homestay or camp.`,
+    },
+    {
+      title: "Day 6: Cultural Walk & Leisure",
+      content: `• Easy walk around village area.\n• Explore local lifestyle & customs.\n• Relax with scenic sunset views.`,
+    },
+    // {
+    //   title: "Day 6: Departure Day",
+    //   content: `• Morning breakfast with group.\n• Pack up & say goodbye.\n• Depart with cherished memories.`,
+    // }
+  
+  
 ];
 
 export default function GulabiKanthaTrek() {

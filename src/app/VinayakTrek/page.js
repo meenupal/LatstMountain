@@ -21,7 +21,7 @@ const destinations = [
 
 const itinerary = [
   {
-    title: "Day 1: Arrival at Base & Acclimatization",
+    title: "Day 1:Arrival at Base & Acclimatization",
     content: `• Arrive at the base village and receive a warm welcome.\n• Briefing by trek leader and light acclimatization walk.\n• Dinner and overnight stay under the stars.`,
   },
   {

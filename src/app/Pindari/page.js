@@ -28,10 +28,10 @@ const itinerary = [
     title: "Day 2: Trek to Khati Village",
     content: `• Begin trek to Khati (approx. 11km).\n• Walk through forest trails and quaint Himalayan settlements.\n• Stay overnight at a homestay or tent.`,
   },
-  {
-    title: "Day 3: Trek to Dwali",
-    content: `• Trek from Khati to Dwali (13km).\n• Enjoy the scenic views of streams and glaciers.\n• Camp near Dwali under starlit skies.`,
-  },
+  // {
+  //   title: "Day 3: Trek to Dwali",
+  //   content: `• Trek from Khati to Dwali (13km).\n• Enjoy the scenic views of streams and glaciers.\n• Camp near Dwali under starlit skies.`,
+  // },
   {
     title: "Day 4: Dwali to Pindari Glacier & back",
     content: `• Early morning trek to Zero Point of Pindari Glacier (6km one way).\n• Witness panoramic views of snow-covered Himalayan peaks.\n• Return to Dwali by evening and rest.`,

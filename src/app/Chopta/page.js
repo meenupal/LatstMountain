@@ -317,7 +317,7 @@ const itinerary = [
     content: `• Drive from Rishikesh to Chopta (approx. 8-9 hrs).\n• Enjoy the scenic route through Devprayag and Rudraprayag.\n• Arrive and check into camp at Chopta.`,
   },
   {
-    title: "Day 2: Chopta – Tungnath – Chandrashila – Chopta",
+    title: "Day 2: Chopta –Tungnath –Chandrashila –Chopta",
     content: `• Early morning start for trek to Tungnath Temple (3.5 km).\n• Continue to Chandrashila summit (1.5 km) for panoramic views.\n• Return back to Chopta for overnight stay.`,
   },
   {

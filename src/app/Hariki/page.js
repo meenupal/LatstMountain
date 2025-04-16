@@ -41,12 +41,12 @@ const itinerary = [
     title: "Day 5: Har Ki Dun to Seema",
     content: `• Retrace the trail to Seema.\n• Capture scenic moments and relax at campsite.`,
   },
+  // {
+  //   title: "Day 6: Seema to Taluka and back to Sankri",
+  //   content: `• Trek down to Taluka and drive back to Sankri.\n• Farewell dinner and stay at guesthouse.`,
+  // },
   {
-    title: "Day 6: Seema to Taluka and back to Sankri",
-    content: `• Trek down to Taluka and drive back to Sankri.\n• Farewell dinner and stay at guesthouse.`,
-  },
-  {
-    title: "Day 7: Departure from Sankri",
+    title: "Day 6: Departure from Sankri",
     content: `• Enjoy breakfast and depart with memories of the majestic Har Ki Dun Valley.`,
   },
 ];

@@ -20,10 +20,15 @@ const destinations = [
 ];
 
 const itinerary = [
+  // {
+  //   title: "Day 1: Arrival at Sangamchatti & Trek to Agoda Village",
+  //   content: `• Reach Sangamchatti by morning.\n• Begin the scenic trek to Agoda Village (6km).\n• Overnight stay at local guesthouse or camps.`,
+  // },
   {
-    title: "Day 1: Arrival at Sangamchatti & Trek to Agoda Village",
+    title: "Day 1: Sangamchatti to Agoda",
     content: `• Reach Sangamchatti by morning.\n• Begin the scenic trek to Agoda Village (6km).\n• Overnight stay at local guesthouse or camps.`,
   },
+  
   {
     title: "Day 2: Trek from Agoda to Dodital Lake",
     content: `• Start early for Dodital Lake (approx. 16km).\n• Pass through dense forests and Himalayan trails.\n• Reach the beautiful lake and camp nearby.`,

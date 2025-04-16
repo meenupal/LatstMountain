@@ -37,12 +37,12 @@ const itinerary = [
     title: "Day 4: Ghangaria to Hemkund Sahib and Back",
     content: `• Steep trek to Hemkund Sahib (4,329 m) – a sacred Sikh shrine.\n• Enjoy serene lake views and spiritual ambiance.\n• Descend back to Ghangaria.`,
   },
+  // {
+  //   title: "Day 5: Ghangaria to Govindghat Joshimath",
+  //   content: `• Trek down to Pulna and drive to Govindghat.\n• Continue onward journey to Joshimath.\n• Overnight at Joshimath.`,
+  // },
   {
-    title: "Day 5: Ghangaria to Govindghat – Joshimath",
-    content: `• Trek down to Pulna and drive to Govindghat.\n• Continue onward journey to Joshimath.\n• Overnight at Joshimath.`,
-  },
-  {
-    title: "Day 6: Joshimath to Rishikesh",
+    title: "Day 5: Joshimath to Rishikesh",
     content: `• Return drive to Rishikesh with memories of a magical trek.\n• Trip ends in the evening.`,
   },
 ];
