@@ -249,7 +249,7 @@ export default function Form() {
 
   return (
     <div
-      className="relative w-full h-screen bg-cover bg-center transition-all duration-1000 ease-in-out"
+      className="relative w-full md:mb-2 h-screen bg-cover bg-center transition-all duration-1000 ease-in-out"
       style={{ backgroundImage: `url(${slides[currentImage].image})` }}
     >
       {/* Overlay */}

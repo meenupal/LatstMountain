@@ -505,8 +505,8 @@ const tourPackages = [
       price: "19,000",
       discount: "15%",
       tag: "Monsoon Sale!",
-      image: "/deal50.jpg",
-      link: "/balipass",
+      image: "/deal64.jpg",
+      link: "/Balipass",
     },
     {
       title: "Brahmatal Winter Trek",
@@ -526,7 +526,7 @@ const tourPackages = [
       discount: "15%",
       tag: "Monsoon Sale!",
       image: "/deal43.jpg",
-      link: "/kuaripass",
+      link: "/Kuaripass",
     },
     {
       title: "Char Dham Yatra 2025",
@@ -566,7 +566,7 @@ const tourPackages = [
       discount: "15%",
       tag: "Monsoon Sale!",
       image: "/deal49.jpg",
-      link: "/dodital",
+      link: "/Dodital",
     },
     {
       title: "Chandrashila Peak Trek Package",
@@ -586,7 +586,7 @@ const tourPackages = [
       discount: "15%",
       tag: "Monsoon Sale!",
       image: "/deal41.jpg",
-      link: "/pindariglacier",
+      link: "/Pindari",
     },
     {
       title: "Nag Tibba Weekend Trek",
