@@ -52,7 +52,7 @@ export default function About() {
       <div
         className="bg-cover mt-20 bg-center h-[300px] flex items-center justify-center text-white text-center shadow-lg"
         style={{
-          backgroundImage: "url('deal10.jpg')",
+          backgroundImage: "url('deal73.jpg')",
         }}
       >
         <div className=" bg-opacity-50 p-10 rounded-xl">
