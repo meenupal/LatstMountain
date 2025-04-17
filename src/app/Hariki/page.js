@@ -81,17 +81,16 @@ export default function HarKiDunTrek() {
 
 📌 Please reach out for confirmation and next steps.`;
 
-    const whatsappURL = `https://wa.me/9123456156?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/9123456156?text=${encodeURIComponent(
+      message
+    )}`;
     window.open(whatsappURL, "_blank");
   };
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 mt-16">
-        {/* <h2 className="text-4xl font-semibold text-center text-gray-800 mb-10 underline">
-          Discover the <span className="text-[#F54900]">Har Ki Dun Valley</span> with MountainMyTrip
-        </h2> */}
+      {/* <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 mt-16">
+       
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 auto-rows-[220px] md:auto-rows-[250px]">
           {destinations.map((item, index) => (
             <div
@@ -110,13 +109,93 @@ export default function HarKiDunTrek() {
             </div>
           ))}
         </div>
+      </section> */}
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 mt-8">
+        <div className="flex flex-col gap-2 sm:hidden">
+          {/*   
+    <div className="w-full h-[300px] relative rounded-xl overflow-hidden shadow-md">
+      <Image
+        src={destinations[0].src}
+        alt={`MountainMyTrip Vinayak Top 1`}
+        fill
+        className="object-cover"
+        sizes="100vw"
+      />
+    </div> */}
+
+          {/* Show two rows of two images in flex */}
+          <div className="flex gap-2">
+            <div className="w-1/2 h-[200px] relative rounded-xl overflow-hidden shadow-md">
+              <Image
+                src={destinations[1].src}
+                alt={`MountainMyTrip Vinayak Top 2`}
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
+            </div>
+            <div className="w-1/2 h-[200px] relative rounded-xl overflow-hidden shadow-md">
+              <Image
+                src={destinations[2].src}
+                alt={`MountainMyTrip Vinayak Top 3`}
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
+            </div>
+          </div>
+
+          <div className="flex gap-2">
+            <div className="w-1/2 h-[200px] relative rounded-xl overflow-hidden shadow-md">
+              <Image
+                src={destinations[3].src}
+                alt={`MountainMyTrip Vinayak Top 4`}
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
+            </div>
+            <div className="w-1/2 h-[200px] relative rounded-xl overflow-hidden shadow-md">
+              <Image
+                src={destinations[4].src}
+                alt={`MountainMyTrip Vinayak Top 5`}
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* For tablet and desktop view - original grid */}
+        <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 gap-2 auto-rows-[250px]">
+          {destinations.map((item, index) => (
+            <div
+              key={index}
+              className={`relative w-full h-full rounded-xl overflow-hidden group shadow-md ${
+                item.gridClass || ""
+              }`}
+            >
+              <div className="w-full h-full transition-transform duration-500 ease-in-out transform group-hover:scale-110">
+                <Image
+                  src={item.src}
+                  alt={`MountainMyTrip Vinayak Top ${index + 1}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Main Content Section */}
-      <section className="max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row gap-10">
+      <section className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row gap-10">
         {/* Left Content */}
         <div className="flex-1">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
             HAR KI DUN VALLEY EXPEDITION
           </h1>
 
@@ -139,15 +218,20 @@ export default function HarKiDunTrek() {
             About this Activity
           </h2>
           <p className="text-gray-600 mb-4">
-            The Har Ki Dun Valley Trek is a timeless Himalayan journey that combines myth, beauty, and adventure.
-            Known as the “Valley of Gods,” it is perfect for trekkers looking to explore offbeat trails, quaint villages,
-            alpine meadows, and breathtaking valley views.
+            The Har Ki Dun Valley Trek is a timeless Himalayan journey that
+            combines myth, beauty, and adventure. Known as the “Valley of Gods,”
+            it is perfect for trekkers looking to explore offbeat trails, quaint
+            villages, alpine meadows, and breathtaking valley views.
           </p>
 
-          <h2 className="text-xl font-semibold text-gray-700 mb-2">Highlights</h2>
+          <h2 className="text-xl font-semibold text-gray-700 mb-2">
+            Highlights
+          </h2>
           <ul className="list-disc list-inside text-gray-600 space-y-2 mb-6">
             <li>Ancient villages and the legendary Osla temple.</li>
-            <li>Spectacular views of Swargarohini, Bandarpoonch & Black Peak.</li>
+            <li>
+              Spectacular views of Swargarohini, Bandarpoonch & Black Peak.
+            </li>
             <li>Ideal trek for photography, nature walks & birdwatching.</li>
             <li>Adventure through pine forests and glacial valleys.</li>
             <li>Beginner to intermediate friendly expedition.</li>
@@ -173,7 +257,9 @@ export default function HarKiDunTrek() {
 
           {/* Itinerary Section */}
           <div className="my-8">
-            <h2 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">Itinerary</h2>
+            <h2 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">
+              Itinerary
+            </h2>
             <div className="flex flex-col gap-4">
               {itinerary.map((item, index) => (
                 <div
@@ -208,10 +294,15 @@ export default function HarKiDunTrek() {
         <div className="w-full md:w-[350px] lg:w-[400px] flex-shrink-0">
           <div className="sticky top-24">
             <div className="bg-white shadow-lg rounded-2xl p-6 border">
-              <h3 className="text-lg font-semibold text-gray-800 mb-1">Book Your Slot Now!</h3>
-              <div className="text-sm text-green-600 font-bold mb-2">Limited Season Offer</div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                Book Your Slot Now!
+              </h3>
+              <div className="text-sm text-green-600 font-bold mb-2">
+                Limited Season Offer
+              </div>
               <div className="text-xl font-bold text-red-600 mb-4">
-                Starting From: <span className="text-gray-600">₹9,999</span>/Per Person
+                Starting From: <span className="text-gray-600">₹9,999</span>/Per
+                Person
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-3">

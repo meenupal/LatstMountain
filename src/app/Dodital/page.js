@@ -28,7 +28,7 @@ const itinerary = [
     title: "Day 1: Sangamchatti to Agoda",
     content: `• Reach Sangamchatti by morning.\n• Begin the scenic trek to Agoda Village (6km).\n• Overnight stay at local guesthouse or camps.`,
   },
-  
+
   {
     title: "Day 2: Trek from Agoda to Dodital Lake",
     content: `• Start early for Dodital Lake (approx. 16km).\n• Pass through dense forests and Himalayan trails.\n• Reach the beautiful lake and camp nearby.`,
@@ -77,17 +77,17 @@ export default function DoditalLakeWinterTrek() {
 
 📌 Please reach out for confirmation and next steps.`;
 
-    const whatsappURL = `https://wa.me/9123456156?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/9123456156?text=${encodeURIComponent(
+      message
+    )}`;
     window.open(whatsappURL, "_blank");
   };
 
   return (
     <>
-      {/* Hero Section */}
+      {/*       
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 mt-16">
-        {/* <h2 className="text-4xl font-semibold text-center text-gray-800 mb-10 underline">
-          Explore <span className="text-[#F54900]">Dodital Lake Winter Trek</span>
-        </h2> */}
+       
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 auto-rows-[220px] md:auto-rows-[250px]">
           {destinations.map((item, index) => (
             <div
@@ -106,13 +106,93 @@ export default function DoditalLakeWinterTrek() {
             </div>
           ))}
         </div>
+      </section> */}
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 mt-8">
+        <div className="flex flex-col gap-2 sm:hidden">
+          {/*   
+    <div className="w-full h-[300px] relative rounded-xl overflow-hidden shadow-md">
+      <Image
+        src={destinations[0].src}
+        alt={`MountainMyTrip Vinayak Top 1`}
+        fill
+        className="object-cover"
+        sizes="100vw"
+      />
+    </div> */}
+
+          {/* Show two rows of two images in flex */}
+          <div className="flex gap-2">
+            <div className="w-1/2 h-[200px] relative rounded-xl overflow-hidden shadow-md">
+              <Image
+                src={destinations[1].src}
+                alt={`MountainMyTrip Vinayak Top 2`}
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
+            </div>
+            <div className="w-1/2 h-[200px] relative rounded-xl overflow-hidden shadow-md">
+              <Image
+                src={destinations[2].src}
+                alt={`MountainMyTrip Vinayak Top 3`}
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
+            </div>
+          </div>
+
+          <div className="flex gap-2">
+            <div className="w-1/2 h-[200px] relative rounded-xl overflow-hidden shadow-md">
+              <Image
+                src={destinations[3].src}
+                alt={`MountainMyTrip Vinayak Top 4`}
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
+            </div>
+            <div className="w-1/2 h-[200px] relative rounded-xl overflow-hidden shadow-md">
+              <Image
+                src={destinations[4].src}
+                alt={`MountainMyTrip Vinayak Top 5`}
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* For tablet and desktop view - original grid */}
+        <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 gap-2 auto-rows-[250px]">
+          {destinations.map((item, index) => (
+            <div
+              key={index}
+              className={`relative w-full h-full rounded-xl overflow-hidden group shadow-md ${
+                item.gridClass || ""
+              }`}
+            >
+              <div className="w-full h-full transition-transform duration-500 ease-in-out transform group-hover:scale-110">
+                <Image
+                  src={item.src}
+                  alt={`MountainMyTrip Vinayak Top ${index + 1}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Main Section */}
-      <section className="max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row gap-10">
+      <section className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row gap-10">
         {/* Left Content */}
         <div className="flex-1">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
             DODITAL LAKE WINTER TREK
           </h1>
 
@@ -131,12 +211,20 @@ export default function DoditalLakeWinterTrek() {
             </div>
           </div>
 
-          <h2 className="text-xl font-semibold text-gray-700 mb-2">About this Journey</h2>
+          <h2 className="text-xl font-semibold text-gray-700 mb-2">
+            About this Journey
+          </h2>
           <p className="text-gray-600 mb-4">
-            The Dodital Lake Winter Trek is a serene and scenic adventure into Uttarakhand’s lesser-known alpine beauty. Nestled amidst snow-clad mountains, this trek offers the tranquility of an icy lake surrounded by pine and oak forests. Ideal for beginners, nature lovers, and those looking for a peaceful Himalayan experience.
+            The Dodital Lake Winter Trek is a serene and scenic adventure into
+            Uttarakhand’s lesser-known alpine beauty. Nestled amidst snow-clad
+            mountains, this trek offers the tranquility of an icy lake
+            surrounded by pine and oak forests. Ideal for beginners, nature
+            lovers, and those looking for a peaceful Himalayan experience.
           </p>
 
-          <h2 className="text-xl font-semibold text-gray-700 mb-2">Highlights</h2>
+          <h2 className="text-xl font-semibold text-gray-700 mb-2">
+            Highlights
+          </h2>
           <ul className="list-disc list-inside text-gray-600 space-y-2 mb-6">
             <li>Frozen alpine lake surrounded by snow-covered forests.</li>
             <li>Optional climb to Darwa Top for 360° Himalayan views.</li>
@@ -207,7 +295,8 @@ export default function DoditalLakeWinterTrek() {
                 Winter Offer: Flat 10% Off
               </div>
               <div className="text-xl font-bold text-red-600 mb-4">
-                Starting From: <span className="text-gray-600">₹8,999</span>/Per Person
+                Starting From: <span className="text-gray-600">₹8,999</span>/Per
+                Person
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-3">

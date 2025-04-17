@@ -1,5 +1,3 @@
-
-
 // "use client";
 // import Image from "next/image";
 // import { useState } from "react";
@@ -282,7 +280,6 @@
 //   );
 // }
 
-
 "use client";
 import Image from "next/image";
 import { useState } from "react";
@@ -313,36 +310,32 @@ const itinerary = [
   //   title: "Day 2: Trek to Gulabi Kantha A Hidden Gem",
   //   content: `• Ascend through dense pine and oak forests.\n• Panoramic views of the Garhwal Himalayas.\n• Experience untouched landscapes with wildflowers and meadows.`,
   // },
-  
 
-    {
-      title: "Day 2: Trek to Gulabi Kantha",
-      content: `• Hike through pine-oak forests.\n• Stunning Himalayan views.\n• Meadows dotted with wildflowers.`,
-    },
-    {
-      title: "Day 3: Explore & Return",
-      content: `• Explore Gulabi Kantha area.\n• Descend to basecamp.\n• Depart with lasting memories.`,
-    },
-  
-  
+  {
+    title: "Day 2: Trek to Gulabi Kantha",
+    content: `• Hike through pine-oak forests.\n• Stunning Himalayan views.\n• Meadows dotted with wildflowers.`,
+  },
+  {
+    title: "Day 3: Explore & Return",
+    content: `• Explore Gulabi Kantha area.\n• Descend to basecamp.\n• Depart with lasting memories.`,
+  },
+
   {
     title: "Day 4: Exploration and Return",
     content: `• Morning exploration of Gulabi Kantha peak area.\n• Begin descent back to basecamp.\n• Share experiences and depart with memories.`,
   },
-      {
-      title: "Day 5: Basecamp to Village",
-      content: `• Trek down to nearby village.\n• Interact with locals & enjoy traditional food.\n• Overnight in homestay or camp.`,
-    },
-    {
-      title: "Day 6: Cultural Walk & Leisure",
-      content: `• Easy walk around village area.\n• Explore local lifestyle & customs.\n• Relax with scenic sunset views.`,
-    },
-    // {
-    //   title: "Day 6: Departure Day",
-    //   content: `• Morning breakfast with group.\n• Pack up & say goodbye.\n• Depart with cherished memories.`,
-    // }
-  
-  
+  {
+    title: "Day 5: Basecamp to Village",
+    content: `• Trek down to nearby village.\n• Interact with locals & enjoy traditional food.\n• Overnight in homestay or camp.`,
+  },
+  {
+    title: "Day 6: Cultural Walk & Leisure",
+    content: `• Easy walk around village area.\n• Explore local lifestyle & customs.\n• Relax with scenic sunset views.`,
+  },
+  // {
+  //   title: "Day 6: Departure Day",
+  //   content: `• Morning breakfast with group.\n• Pack up & say goodbye.\n• Depart with cherished memories.`,
+  // }
 ];
 
 export default function GulabiKanthaTrek() {
@@ -383,11 +376,9 @@ export default function GulabiKanthaTrek() {
 
   return (
     <>
-      {/* Hero Section */}
+      {/*     
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 mt-16">
-        {/* <h2 className="text-4xl font-semibold text-center text-gray-800 mb-10 underline">
-          Explore with <span className="text-[#F54900]">MountainMyTrip</span>
-        </h2> */}
+       
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 auto-rows-[220px] md:auto-rows-[250px]">
           {destinations.map((item, index) => (
             <div
@@ -408,13 +399,93 @@ export default function GulabiKanthaTrek() {
             </div>
           ))}
         </div>
+      </section> */}
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 mt-8">
+        <div className="flex flex-col gap-2 sm:hidden">
+          {/*   
+    <div className="w-full h-[300px] relative rounded-xl overflow-hidden shadow-md">
+      <Image
+        src={destinations[0].src}
+        alt={`MountainMyTrip Vinayak Top 1`}
+        fill
+        className="object-cover"
+        sizes="100vw"
+      />
+    </div> */}
+
+          {/* Show two rows of two images in flex */}
+          <div className="flex gap-2">
+            <div className="w-1/2 h-[200px] relative rounded-xl overflow-hidden shadow-md">
+              <Image
+                src={destinations[1].src}
+                alt={`MountainMyTrip Vinayak Top 2`}
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
+            </div>
+            <div className="w-1/2 h-[200px] relative rounded-xl overflow-hidden shadow-md">
+              <Image
+                src={destinations[2].src}
+                alt={`MountainMyTrip Vinayak Top 3`}
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
+            </div>
+          </div>
+
+          <div className="flex gap-2">
+            <div className="w-1/2 h-[200px] relative rounded-xl overflow-hidden shadow-md">
+              <Image
+                src={destinations[3].src}
+                alt={`MountainMyTrip Vinayak Top 4`}
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
+            </div>
+            <div className="w-1/2 h-[200px] relative rounded-xl overflow-hidden shadow-md">
+              <Image
+                src={destinations[4].src}
+                alt={`MountainMyTrip Vinayak Top 5`}
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* For tablet and desktop view - original grid */}
+        <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 gap-2 auto-rows-[250px]">
+          {destinations.map((item, index) => (
+            <div
+              key={index}
+              className={`relative w-full h-full rounded-xl overflow-hidden group shadow-md ${
+                item.gridClass || ""
+              }`}
+            >
+              <div className="w-full h-full transition-transform duration-500 ease-in-out transform group-hover:scale-110">
+                <Image
+                  src={item.src}
+                  alt={`MountainMyTrip Vinayak Top ${index + 1}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Main Section */}
-      <section className="max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row gap-10">
+      <section className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row gap-10">
         {/* Left Content */}
         <div className="flex-1">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
             GULABI KANTHA TREK
           </h1>
 
@@ -439,12 +510,13 @@ export default function GulabiKanthaTrek() {
           <p className="text-gray-600 mb-4">
             The Gulabi Kantha Trek is a scenic and lesser-explored trail located
             in the Garhwal Himalayas of Uttarakhand. This trek offers lush
-            alpine meadows, enchanting forest trails, and breathtaking
-            panoramic views, making it a paradise for nature lovers and
-            adventurers alike.
+            alpine meadows, enchanting forest trails, and breathtaking panoramic
+            views, making it a paradise for nature lovers and adventurers alike.
           </p>
 
-          <h2 className="text-xl font-semibold text-gray-700 mb-2">Highlights</h2>
+          <h2 className="text-xl font-semibold text-gray-700 mb-2">
+            Highlights
+          </h2>
           <ul className="list-disc list-inside text-gray-600 space-y-2 mb-6">
             <li>Unexplored beauty with serene Himalayan landscapes.</li>
             <li>Panoramic views of Bandarpoonch, Black Peak, and more.</li>
@@ -515,7 +587,8 @@ export default function GulabiKanthaTrek() {
                 Save 20%
               </div>
               <div className="text-xl font-bold text-red-600 mb-4">
-                Starting From: <span className="text-gray-600">₹6,999</span>/Per Person
+                Starting From: <span className="text-gray-600">₹6,999</span>/Per
+                Person
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-3">
@@ -579,4 +652,3 @@ export default function GulabiKanthaTrek() {
     </>
   );
 }
-
