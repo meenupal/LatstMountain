@@ -37,6 +37,11 @@ const itinerary = [
     title: "Day 4:Trek to Chandrashila via Tungnath",
     content: `• Early morning trek to Tungnath (world's highest Shiva temple).\n• Continue to Chandrashila summit for panoramic Himalayan views.\n• Descend to Chopta for overnight stay.` 
   },
+  // {
+  //   title: "Day 4: Summit Trek Tungnath to Chandrashila",
+  //   content: `• Trek to Tungnath and Chandrashila for stunning Himalayan views.\n• Spot peaks like Nanda Devi and Trishul.\n• Return to Chopta for an overnight stay.`
+  // },
+  
   {
     title: "Day 5: Chopta to Rishikesh",
     content: `• Return drive to Rishikesh.\n• Trip ends with beautiful memories.` 

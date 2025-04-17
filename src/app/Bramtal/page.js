@@ -333,7 +333,7 @@ const itinerary = [
     content: `• Trek through snow-covered trails (7 km).\n• Magnificent views of Mt. Trishul & Nanda Ghunti.\n• Camp at Brahmatal base under starry skies.`,
   },
   {
-    title: "Day 4: Summit Brahmatal and Return",
+    title: "Day 4:Summit Brahmatal and Return",
     content: `• Early morning climb to Brahmatal summit.\n• Witness sunrise over Himalayan peaks.\n• Descend to base for the night.`,
   },
   {
