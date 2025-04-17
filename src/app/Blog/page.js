@@ -276,7 +276,7 @@ export default function Blog() {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <div
-        className="bg-cover mt-20 bg-center h-[300px] flex items-center justify-center text-white text-center shadow-lg"
+        className="bg-cover mt-16 bg-center h-[365px] flex items-center justify-center text-white text-center shadow-lg"
         style={{
           backgroundImage: "url('deal26.jpg')",
         }}
@@ -312,7 +312,7 @@ export default function Blog() {
             className="w-full h-96 object-cover transform group-hover:scale-105 transition duration-300"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent">
-            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 text-white">
+            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-10 text-white">
               <span className="bg-[#F54A00] text-white px-4 py-1 rounded-full text-xs font-medium">
                 {featuredPost.category}
               </span>
