@@ -339,30 +339,36 @@ const destinations = [
 ];
 
 const itinerary = [
-  {
-    title: "Day1: Gulabi Kantha Trek in Uttarakhand – A Hidden Gem",
-    content: `• Untouched Beauty: Still relatively unexplored\n• Location: Garhwal Himalayas, Uttarakhand\n• Breathtaking panoramic views\n• Lush green meadows, wildflowers, dense forests`,
-  },
-  {
-    title: "Day 2: Higher Elevation and Scenic Views",
-    content: `• Higher elevation climbs, forest trails, and local encounters.`,
-  },
   // {
-  //   title: "Day 3: Return and Final Day",
-  //   content: `• Trek back to basecamp. Farewell to the Himalayas.`,
+  //   title: "Day1: Gulabi Kantha Trek in Uttarakhand – A Hidden Gem",
+  //   content: `• Untouched Beauty: Still relatively unexplored\n• Location: Garhwal Himalayas, Uttarakhand\n• Breathtaking panoramic views\n• Lush green meadows, wildflowers, dense forests`,
   // },
+  // {
+  //   title: "Day 2: Higher Elevation and Scenic Views",
+  //   content: `• Higher elevation climbs, forest trails, and local encounters.`,
+  // },
+
   {
-    title: "Day 4: Gulabi Kantha Trek in Uttarakhand – A Hidden Gem",
-    content: `• Untouched Beauty: Still relatively unexplored\n• Location: Garhwal Himalayas, Uttarakhand\n• Breathtaking panoramic views\n• Lush green meadows, wildflowers, dense forests`,
+    title: "Day 1: Arrival and Trek Preparation",
+    content: `• Arrive at the base camp in Uttarkashi, Uttarakhand.\n• Meet trek leaders and fellow trekkers.\n• Briefing, gear check, and acclimatization walk.\n• Overnight stay in camps or guesthouse.`,
   },
   {
-    title: "Day 5: Higher Elevation and Scenic Views",
-    content: `• Higher elevation climbs, forest trails, and local encounters.`,
+    title: "Day 2: Trek to Gulabi Kantha Base Camp",
+    content: `• Begin the trek through lush forests and vibrant meadows.\n• Witness stunning views of Himalayan peaks.\n• Campsite near alpine pastures filled with wildflowers.\n• Evening bonfire and dinner under the stars.`,
   },
   {
-    title: "Day 6: Return and Final Day",
-    content: `• Trek back to basecamp. Farewell to the Himalayas.`,
+    title: "Day 3: Summit Day – Gulabi Kantha Peak",
+    content: `• Early morning climb to Gulabi Kantha summit.\n• Breathtaking panoramic views of the Garhwal Himalayas.\n• Explore the untouched beauty of this hidden gem.\n• Return to base camp for overnight stay.`,
   },
+  {
+    title: "Day 4: Return Trek to Base Village",
+    content: `• Descend back through scenic trails and forest paths.\n• Interact with locals and enjoy peaceful surroundings.\n• Return to base village by afternoon.\n• Celebrate the completion of the trek.`,
+  },
+  {
+    title: "Day 5: Departure from Base Camp",
+    content: `• Morning breakfast and farewell with the group.\n• Depart from Uttarkashi with unforgettable memories.\n• Optional local sightseeing before departure.`,
+  },
+
 ];
 
 export default function SarPassTrek() {
@@ -594,7 +600,7 @@ export default function SarPassTrek() {
       </section>
 
       <HimaliyeMyTripCarousel />
-      <HimTrek/>
+      <HimTrek />
     </>
   );
 }
