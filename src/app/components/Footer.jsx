@@ -44,6 +44,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="/Team" className="hover:underline">
+                  Team
+                </a>
+              </li>
+              <li>
                 <a href="#" className="hover:underline">
                   Privacy Policy
                 </a>

@@ -12,11 +12,11 @@ import HimaliyeMyTripCarousel from "../components/HimaliyeMyTrip";
 import HimTrek from "../components/HimTrek";
 
 const destinations = [
-  { src: "/chandrashila1.jpg", gridClass: "lg:col-span-2" },
-  { src: "/chandrashila2.jpg" },
-  { src: "/chandrashila3.jpg" },
-  { src: "/chandrashila4.jpg" },
-  { src: "/chandrashila5.jpg" },
+  { src: "/deal85.jpg", gridClass: "lg:col-span-2" },
+  { src: "/deal84.jpg" },
+  { src: "/deal80.webp" },
+  { src: "/deal77.webp" },
+  { src: "/deal66.webp" },
 ];
 
 const itinerary = [

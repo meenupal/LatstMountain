@@ -36,7 +36,8 @@ export default function Navbar() {
         { name: "DoditalTrek", link: "/Dodital" },
         { name: "HarKiDunTrek", link: "/Hariki" },
         { name: "Valley of Flowers Trek", link: "/Valleyflowers" },
-        { name: "Chopta Tungnath Chandrashila Trek", link: "/Chopta" },
+        { name: "Chopta Tungnath  Trek", link: "/Chopta" },
+        { name: "Chandrashila Trek", link: "/Chandrashila" },
       ],
     },
     {
