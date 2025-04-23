@@ -12,11 +12,11 @@ import HimaliyeMyTripCarousel from "../components/HimaliyeMyTrip";
 import HimTrek from "../components/HimTrek";
 
 const destinations = [
-  { name: "", src: "/deal70.jpg", gridClass: "lg:col-span-2" },
-  { name: "", src: "/deal71.jpg" },
-  { name: "", src: "/deal52.jpg" },
-  { name: "", src: "/deal49.jpg" },
-  { name: "", src: "/deal66.jpg" },
+  { name: "", src: "/deal70.webp", gridClass: "lg:col-span-2" },
+  { name: "", src: "/deal71.webp" },
+  { name: "", src: "/deal52.webp" },
+  { name: "", src: "/deal49.webp" },
+  { name: "", src: "/deal66.webp" },
 ];
 
 const itinerary = [
@@ -47,7 +47,7 @@ const itinerary = [
 ];
 
 export default function PindariGlacierTrek() {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState([]);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -249,8 +249,8 @@ export default function PindariGlacierTrek() {
             </ul>
           </div>
 
-          {/* Itinerary Section */}
-          <div className="my-8">
+          
+          {/* <div className="my-8">
             <h2 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">
               Itinerary
             </h2>
@@ -281,7 +281,61 @@ export default function PindariGlacierTrek() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
+          {/* Itinerary Section */}
+<div className="my-8">
+  <h2 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">
+    Itinerary
+  </h2>
+
+  <button
+    onClick={() => {
+      const allOpen = openIndex.length === itinerary.length;
+      setOpenIndex(allOpen ? [] : itinerary.map((_, i) => i));
+    }}
+    className="mb-4 text-orange-600 font-medium hover:underline"
+  >
+    {openIndex.length === itinerary.length ? "Close All" : "Open All"}
+  </button>
+
+  <div className="flex flex-col gap-4">
+    {itinerary.map((item, index) => {
+      const isOpen = openIndex.includes(index);
+      return (
+        <div
+          key={index}
+          className="w-full border border-gray-200 rounded-xl shadow-sm bg-white"
+        >
+          <button
+            onClick={() => {
+              if (isOpen) {
+                setOpenIndex(openIndex.filter((i) => i !== index));
+              } else {
+                setOpenIndex([...openIndex, index]);
+              }
+            }}
+            className="w-full px-4 py-4 flex justify-between items-center hover:bg-gray-100"
+          >
+            <span className="text-base md:text-lg font-semibold text-gray-800">
+              {item.title}
+            </span>
+            {isOpen ? (
+              <FaChevronUp className="text-orange-500" />
+            ) : (
+              <FaChevronDown className="text-orange-500" />
+            )}
+          </button>
+          {isOpen && (
+            <div className="px-5 pb-4 text-gray-600 whitespace-pre-line text-sm md:text-base">
+              {item.content}
+            </div>
+          )}
+        </div>
+      );
+    })}
+  </div>
+</div>
+
         </div>
 
         {/* Booking Form */}

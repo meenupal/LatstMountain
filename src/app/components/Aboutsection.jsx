@@ -5,9 +5,9 @@ import Link from "next/link";
 
 export default function Aboutsection() {
   return (
-    <section className="px-16 md:ml-[50px] md:px-28 py-12 flex flex-col md:flex-row items-center jus justify-between">
+    <section className="px-24 md:ml-[50px] md:px-28 py-12 flex flex-col md:flex-row items-center jus justify-between">
       {/* Text Section */}
-      <div className="md:w-1/2 text-center md:text-left">
+      <div className="md:w-1/2  text-center md:text-left">
         <h2 className="text-2xl text-orange-500 font-semibold uppercase tracking-wide">
           About Us
         </h2>
@@ -21,7 +21,7 @@ export default function Aboutsection() {
           trekking in Uttarakhand is the perfect escape. Imagine snow-capped
           peaks, lush meadows, and charming villages—this region is a trekker’s
           paradise waiting to be explored.<br></br><br></br>
-
+  
            Among Uttarakhand’s hidden gems are
           the Dinar Top Trek and Gulabi Kantha Trek. Dinar Top offers serenity
           and panoramic Himalayan views, making it ideal for both beginners and
@@ -59,7 +59,7 @@ export default function Aboutsection() {
         {/* Background Image */}
         <div className="relative w-72 h-52 md:w-112 md:h-88 rounded-lg overflow-hidden">
           <Image
-            src="/deal23.jpg"
+            src="/deal23.webp"
             alt="Hiker on a trail"
             layout="fill"
             objectFit="cover"
@@ -69,7 +69,7 @@ export default function Aboutsection() {
         {/* Overlapping Image */}
         <div className="absolute bottom-[-30px] left-[30px]  md:bottom-[-40px] md:left-[50px] w-48 h-36 md:w-68 md:h-52 rounded-lg overflow-hidden shadow-lg border-4 border-white">
           <Image
-            src="/deal21.jpg"
+            src="/deal21.webp"
             alt="Camping tent"
             layout="fill"
             objectFit="cover"

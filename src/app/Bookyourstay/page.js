@@ -63,7 +63,7 @@ const BookYourStayForm = () => {
   return (
     <div
   className="relative min-h-screen mt-12 flex items-center justify-center bg-cover bg-center py-12 px-4 sm:px-6 lg:px-8"
-  style={{ backgroundImage: "url('/deal59.jpg')" }}
+  style={{ backgroundImage: "url('/deal59.webp')" }}
 >
   <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
   <div className="relative z-10 max-w-2xl w-full bg-white rounded-2xl shadow-2xl p-8 transition-all">

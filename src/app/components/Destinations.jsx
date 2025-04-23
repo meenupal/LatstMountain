@@ -7,22 +7,22 @@ const destinations = [
   {
     title: "Yamunotri",
     description: "The sacred origin of the River Yamuna, nestled in the serene Himalayas.",
-    image: "/deal27.jpg",
+    image: "/deal27.webp",
   },
   {
     title: "Gangotri",
     description: "Birthplace of the holy Ganga, where divinity flows through every stream.",
-    image: "/deal38.jpg",
+    image: "/deal38.webp",
   },
   {
     title: "Kedarnath",
     description: "A spiritual abode of Lord Shiva, surrounded by majestic snow-capped peaks.",
-    image: "/deal36.jpg",
+    image: "/deal36.webp",
   },
   {
     title: "Badrinath",
     description: "The divine dwelling of Lord Vishnu, echoing peace and eternal devotion.",
-    image: "/deal40.jpg",
+    image: "/deal40.webp",
   },
 ];
 

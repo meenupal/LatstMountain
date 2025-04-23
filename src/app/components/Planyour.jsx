@@ -12,7 +12,7 @@ export default function DiscountSection() {
         <div className="relative">
           {/* Background Image */}
           <Image
-            src="/deal39.png" // Replace with your actual image path
+            src="/deal39.webp" // Replace with your actual image path
             alt="Eiffel Tower"
             width={600}
             height={500}

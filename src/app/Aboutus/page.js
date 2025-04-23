@@ -52,7 +52,7 @@ export default function About() {
       <div
         className="bg-cover mt-12 bg-center h-[300px] flex items-center justify-center text-white text-center shadow-lg"
         style={{
-          backgroundImage: "url('deal73.jpg')",
+          backgroundImage: "url('deal73.webp')",
         }}
       >
         <div className=" bg-opacity-50 p-12 rounded-xl">
@@ -82,9 +82,9 @@ export default function About() {
           </h1>
         </div>
       </div> */}
-      <div className="flex flex-col md:py-12 lg:flex-row justify-between items-center py-16 px-2 sm:px-12 lg:px-20 gap-12 sm:gap-20">
+      <div className="flex flex-col md:py-12 lg:flex-row justify-between items-center py-16 px-2 sm:px-12 lg:px-20 gap-4 sm:gap-20">
         {/* Left Section */}
-        <div className="lg:w-[60%] text-center  lg:text-left">
+        <div className="lg:w-[50%] text-center  lg:text-left">
           <h1 className="font-bold flex gap-2 flex-col mt-2 items-center sm:items-end sm:flex-row  py-4 text-6xl md:text-5xl text-blue-400"></h1>
 
           <p className="text-xl ml-1.5 text-[#F54900] font-semibold">
@@ -117,7 +117,7 @@ export default function About() {
         {/* Right Section */}
         <div className="w-full pt-16 lg:w-[49%] flex justify-center lg:justify-end">
           <Image
-            src="/deal12.jpg"
+            src="/deal12.webp"
             alt="company logo"
             width={900}
             height={500}
@@ -195,7 +195,7 @@ export default function About() {
                 </div>
                 <p className="text-gray-700 mt-2 ml-14">{event.description}</p>
               </div>
-            ))}    http://localhost:3000
+            ))}   
           </div>
         </div>
       </div>

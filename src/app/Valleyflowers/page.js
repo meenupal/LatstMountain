@@ -13,52 +13,56 @@ import HimaliyeMyTripCarousel from "../components/HimaliyeMyTrip";
 import HimTrek from "../components/HimTrek";
 
 const destinations = [
-  { src: "/deal34.jpg", gridClass: "lg:col-span-2" },
-  { src: "/deal62.jpg" },
-  { src: "/deal48.jpg" },
-  { src: "/deal49.jpg" },
-  { src: "/deal45.jpg" },
+  { src: "/deal75.webp", gridClass: "lg:col-span-2" },
+  { src: "/deal62.webp" },
+  { src: "/deal48.webp" },
+  { src: "/deal49.webp" },
+  { src: "/deal76.webp" },
 ];
 
 const itinerary = [
   {
     title: "Day 1: Rishikesh to Joshimath",
-    content: `• Drive from Rishikesh to Joshimath (approx. 10 hours).\n• Scenic route via Devprayag, Rudraprayag, and Karnaprayag.\n• Overnight stay at guesthouse in Joshimath.`,
+    content: `• Drive from Rishikesh to Joshimath (approx. 10 hrs).\n• Scenic journey through Devprayag, Rudraprayag, and Karnaprayag.\n• Overnight stay at guesthouse in Joshimath.`,
   },
   {
     title: "Day 2: Joshimath to Ghangaria",
-    content: `• Drive to Govindghat and then a short drive to Pulna.\n• Begin 9 km trek to Ghangaria (approx. 5-6 hours).\n• Overnight stay at Ghangaria.`,
+    content: `• Drive to Govindghat, then trek 10 km to Ghangaria.\n• Trek through pine forests and alongside the Pushpawati River.\n• Reach Ghangaria and check into camp or guesthouse.`,
   },
   {
-    title: "Day 3: Ghangaria to Valley of Flowers and Back",
-    content: `• Trek 4 km to the mesmerizing Valley of Flowers.\n• Explore vibrant flora and panoramic views.\n• Return back to Ghangaria for the night.`,
+    title: "Day 3: Ghangaria to Valley of Flowers and back",
+    content: `• Trek to the Valley of Flowers (4 km one-way).\n• Explore the UNESCO World Heritage site, full of rare Himalayan flora.\n• Return to Ghangaria for overnight stay.`,
   },
   {
-    title: "Day 4: Ghangaria to Hemkund Sahib and Back",
-    content: `• Steep trek to Hemkund Sahib (4,329 m) – a sacred Sikh shrine.\n• Enjoy serene lake views and spiritual ambiance.\n• Descend back to Ghangaria.`,
+    title: "Day 4: Ghangaria to Hemkund Sahib and back",
+    content: `• Steep trek to the sacred Hemkund Sahib (6 km one-way).\n• Visit the glacial lake and Gurudwara at 4,329 m.\n• Return to Ghangaria for overnight stay.`,
   },
-  // {
-  //   title: "Day 5: Ghangaria to Govindghat Joshimath",
-  //   content: `• Trek down to Pulna and drive to Govindghat.\n• Continue onward journey to Joshimath.\n• Overnight at Joshimath.`,
-  // },
   {
-    title: "Day 5: Joshimath to Rishikesh",
-    content: `• Return drive to Rishikesh with memories of a magical trek.\n• Trip ends in the evening.`,
+    title: "Day 5: Ghangaria to Govindghat and drive to Joshimath",
+    content: `• Trek back to Govindghat (10 km).\n• Drive to Joshimath and relax.\n• Overnight stay at Joshimath.`,
+  },
+  {
+    title: "Day 6: Joshimath to Rishikesh",
+    content: `• Depart early morning for Rishikesh.\n• Trip ends by evening with unforgettable memories.`,
   },
 ];
 
 export default function ValleyOfFlowersTrek() {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState([]);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     email: "",
-    tripName: "Valley of Flowers Trek Package – UNESCO World Heritage Bloom",
+    tripName: "Valley of Flowers Trek – A Blooming Himalayan Wonderland",
     travellers: "",
   });
 
   const toggleAccordion = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
+    if (openIndex.includes(index)) {
+      setOpenIndex(openIndex.filter((i) => i !== index));
+    } else {
+      setOpenIndex([...openIndex, index]);
+    }
   };
 
   const handleChange = (e) => {
@@ -67,30 +71,58 @@ export default function ValleyOfFlowersTrek() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const message = `*New Trip Booking Request* 🌸🏞️
+    const message = `*New Trip Booking Request* 🌸🏔️
 
 *Name:* ${formData.name}
 *Phone:* ${formData.phone}
-*Email:* ${formData.email}
+${formData.email ? `*Email:* ${formData.email}\n` : ""}
 *Trip:* ${formData.tripName}
 *No. of Travellers:* ${formData.travellers}
 
 📌 Please reach out for confirmation and further details.`;
 
-    const whatsappURL = `https://wa.me/9123456156?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/9123456156?text=${encodeURIComponent(
+      message
+    )}`;
     window.open(whatsappURL, "_blank");
   };
 
   return (
     <>
-{/*   
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 mt-16">
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 auto-rows-[220px] md:auto-rows-[250px]">
+      {/* Image Gallery */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 mt-8">
+        <div className="flex flex-col gap-2 sm:hidden">
+          {[1, 2, 3, 4].map((i) =>
+            i % 2 === 1 ? (
+              <div className="flex gap-2" key={i}>
+                {[i, i + 1].map((j) =>
+                  destinations[j] ? (
+                    <div
+                      key={j}
+                      className="w-1/2 h-[200px] relative rounded-xl overflow-hidden shadow-md"
+                    >
+                      <Image
+                        src={destinations[j].src}
+                        alt={`Valley of Flowers ${j + 1}`}
+                        fill
+                        className="object-cover"
+                        sizes="50vw"
+                      />
+                    </div>
+                  ) : null
+                )}
+              </div>
+            ) : null
+          )}
+        </div>
+
+        <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 gap-2 auto-rows-[250px]">
           {destinations.map((item, index) => (
             <div
               key={index}
-              className={`relative w-full h-full rounded-xl overflow-hidden group shadow-md ${item.gridClass || ""}`}
+              className={`relative w-full h-full rounded-xl overflow-hidden group shadow-md ${
+                item.gridClass || ""
+              }`}
             >
               <div className="w-full h-full transition-transform duration-500 ease-in-out transform group-hover:scale-110">
                 <Image
@@ -104,179 +136,134 @@ export default function ValleyOfFlowersTrek() {
             </div>
           ))}
         </div>
-      </section> */}
+      </section>
 
-
-<section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 mt-8">
-  <div className="flex flex-col gap-2 sm:hidden">
-{/*   
-    <div className="w-full h-[300px] relative rounded-xl overflow-hidden shadow-md">
-      <Image
-        src={destinations[0].src}
-        alt={`MountainMyTrip Vinayak Top 1`}
-        fill
-        className="object-cover"
-        sizes="100vw"
-      />
-    </div> */}
-
-    {/* Show two rows of two images in flex */}
-    <div className="flex gap-2">
-      <div className="w-1/2 h-[200px] relative rounded-xl overflow-hidden shadow-md">
-        <Image
-          src={destinations[1].src}
-          alt={`MountainMyTrip Vinayak Top 2`}
-          fill
-          className="object-cover"
-          sizes="50vw"
-        />
-      </div>
-      <div className="w-1/2 h-[200px] relative rounded-xl overflow-hidden shadow-md">
-        <Image
-          src={destinations[2].src}
-          alt={`MountainMyTrip Vinayak Top 3`}
-          fill
-          className="object-cover"
-          sizes="50vw"
-        />
-      </div>
-    </div>
-
-    <div className="flex gap-2">
-      <div className="w-1/2 h-[200px] relative rounded-xl overflow-hidden shadow-md">
-        <Image
-          src={destinations[3].src}
-          alt={`MountainMyTrip Vinayak Top 4`}
-          fill
-          className="object-cover"
-          sizes="50vw"
-        />
-      </div>
-      <div className="w-1/2 h-[200px] relative rounded-xl overflow-hidden shadow-md">
-        <Image
-          src={destinations[4].src}
-          alt={`MountainMyTrip Vinayak Top 5`}
-          fill
-          className="object-cover"
-          sizes="50vw"
-        />
-      </div>
-    </div>
-  </div>
-
-  {/* For tablet and desktop view - original grid */}
-  <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 gap-2 auto-rows-[250px]">
-    {destinations.map((item, index) => (
-      <div
-        key={index}
-        className={`relative w-full h-full rounded-xl overflow-hidden group shadow-md ${item.gridClass || ""}`}
-      >
-        <div className="w-full h-full transition-transform duration-500 ease-in-out transform group-hover:scale-110">
-          <Image
-            src={item.src}
-            alt={`MountainMyTrip Vinayak Top ${index + 1}`}
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          />
-        </div>
-      </div>
-    ))}
-  </div>
-</section>
-
-
-      {/* Main Content */}
+      {/* Content + Booking */}
       <section className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row gap-10">
-        {/* Left */}
+        {/* Left Section */}
         <div className="flex-1">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
-            VALLEY OF FLOWERS TREK PACKAGE – UNESCO WORLD HERITAGE BLOOM
+            VALLEY OF FLOWERS TREK – A BLOOMING HIMALAYAN WONDERLAND
           </h1>
 
           <div className="flex flex-wrap gap-4 mb-6 text-gray-600">
             <div className="flex items-center gap-2">
-              <FaRegClock className="text-orange-500" />
-              <span>5 Nights 6 Days</span>
+              <FaRegClock className="text-orange-500" />5 Nights 6 Days
             </div>
             <div className="flex items-center gap-2">
               <FaUsers className="text-orange-500" />
-              <span>Group Size: Ideal for Beginners</span>
+              Moderate Difficulty
             </div>
             <div className="flex items-center gap-2">
               <FaUndo className="text-orange-500" />
-              <span>Free Cancellation: Upto 5 Days</span>
+              Free Cancellation: Upto 7 Days
             </div>
           </div>
 
-          <h2 className="text-xl font-semibold text-gray-700 mb-2">About this Trek</h2>
+          <h2 className="text-xl font-semibold text-gray-700 mb-2">
+            About this Trek
+          </h2>
           <p className="text-gray-600 mb-4">
-            The Valley of Flowers trek is a breathtaking journey into the heart of the Himalayas. Famed for its vibrant alpine flora, this UNESCO World Heritage Site offers spiritual serenity, natural beauty, and an unmatched trekking experience in Uttarakhand.
+            The Valley of Flowers Trek in Uttarakhand is a vibrant paradise of
+            rare Himalayan flora and alpine beauty. This UNESCO World Heritage
+            Site attracts botanists, trekkers, and nature lovers from all over
+            the world.
           </p>
 
-          <h2 className="text-xl font-semibold text-gray-700 mb-2">Highlights</h2>
+          <h2 className="text-xl font-semibold text-gray-700 mb-2">
+            Highlights
+          </h2>
           <ul className="list-disc list-inside text-gray-600 space-y-2 mb-6">
-            <li>Explore the colorful Valley of Flowers National Park.</li>
-            <li>Visit Hemkund Sahib – a serene high-altitude Sikh shrine.</li>
-            <li>Ideal for first-time trekkers and nature lovers.</li>
-            <li>Traverse forested trails, waterfalls, and alpine meadows.</li>
-            <li>Witness rare Himalayan flora in full bloom (July to early Sept).</li>
+            <li>Explore the legendary Valley of Flowers National Park.</li>
+            <li>Trek to the sacred Hemkund Sahib at high altitude.</li>
+            <li>
+              Rich variety of rare Himalayan flora in full bloom (July–August).
+            </li>
+            <li>Ideal monsoon trek with breathtaking scenery.</li>
+            <li>Suitable for fit beginners and photography enthusiasts.</li>
           </ul>
 
           <h2 className="text-2xl font-bold mb-6">Excluded & Included</h2>
           <div className="grid md:grid-cols-2 gap-8 text-gray-700 mb-10">
             <ul className="list-disc list-inside space-y-2">
-              <li>All accommodation (Joshimath, Ghangaria).</li>
-              <li>All meals during trek (Veg).</li>
-              <li>Local transportation to/from base points.</li>
-              <li>Experienced trek leader and guides.</li>
-              <li>Forest permits and medical kit.</li>
+              <li>Transportation from/to Rishikesh</li>
+              <li>Accommodation during trek (guesthouses/camps)</li>
+              <li>All vegetarian meals during the trek</li>
+              <li>Experienced local guides and trek leaders</li>
+              <li>Forest permits and entry fees</li>
             </ul>
             <ul className="list-disc list-inside space-y-2">
-              <li>Personal expenses and insurance.</li>
-              <li>Pony or porter services.</li>
-              <li>Tips or donations.</li>
-              <li>Camera/video charges.</li>
-              <li>Anything not mentioned under inclusions.</li>
+              <li>Travel insurance and emergency evacuation</li>
+              <li>Porters or mule charges for personal luggage</li>
+              <li>Personal expenses and tips</li>
+              <li>Camera/charging point fees</li>
+              <li>Anything not mentioned in inclusions</li>
             </ul>
           </div>
 
-          {/* Itinerary Section */}
           <div className="my-8">
-            <h2 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">Itinerary</h2>
+            <h2 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">
+              Itinerary
+            </h2>
+            <button
+              onClick={() =>
+                setOpenIndex(
+                  openIndex.length === itinerary.length
+                    ? []
+                    : itinerary.map((_, i) => i)
+                )
+              }
+              className="mb-4 text-orange-600 font-medium hover:underline"
+            >
+              {openIndex.length === itinerary.length ? "Close All" : "Open All"}
+            </button>
+
             <div className="flex flex-col gap-4">
-              {itinerary.map((item, index) => (
-                <div key={index} className="w-full border border-gray-200 rounded-xl shadow-sm bg-white">
-                  <button
-                    onClick={() => toggleAccordion(index)}
-                    className="w-full px-4 py-4 flex justify-between items-center hover:bg-gray-100"
+              {itinerary.map((item, index) => {
+                const isOpen = openIndex.includes(index);
+                return (
+                  <div
+                    key={index}
+                    className="w-full border border-gray-200 rounded-xl shadow-sm bg-white"
                   >
-                    <span className="text-base md:text-lg font-semibold text-gray-800">{item.title}</span>
-                    {openIndex === index ? (
-                      <FaChevronUp className="text-orange-500" />
-                    ) : (
-                      <FaChevronDown className="text-orange-500" />
+                    <button
+                      onClick={() => toggleAccordion(index)}
+                      className="w-full px-4 py-4 flex justify-between items-center hover:bg-gray-100"
+                    >
+                      <span className="text-base md:text-lg font-semibold text-gray-800">
+                        {item.title}
+                      </span>
+                      {isOpen ? (
+                        <FaChevronUp className="text-orange-500" />
+                      ) : (
+                        <FaChevronDown className="text-orange-500" />
+                      )}
+                    </button>
+                    {isOpen && (
+                      <div className="px-5 pb-4 text-gray-600 whitespace-pre-line text-sm md:text-base">
+                        {item.content}
+                      </div>
                     )}
-                  </button>
-                  {openIndex === index && (
-                    <div className="px-5 pb-4 text-gray-600 whitespace-pre-line text-sm md:text-base">
-                      {item.content}
-                    </div>
-                  )}
-                </div>
-              ))}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
 
-        {/* Booking Form */}
+        {/* Right Booking Form */}
         <div className="w-full md:w-[350px] lg:w-[400px] flex-shrink-0">
           <div className="sticky top-24">
             <div className="bg-white shadow-lg rounded-2xl p-6 border">
-              <h3 className="text-lg font-semibold text-gray-800 mb-1">Book Your Trek Today</h3>
-              <div className="text-sm text-green-600 font-bold mb-2">Limited Slots Available</div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                Book Your Trek Today
+              </h3>
+              <div className="text-sm text-green-600 font-bold mb-2">
+                Monsoon Departure Available
+              </div>
               <div className="text-xl font-bold text-red-600 mb-4">
-                Starting From: <span className="text-gray-600">₹6,499</span>/Per Person
+                Starting From: <span className="text-gray-600">₹6,999</span>/Per
+                Person
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-3">
@@ -301,10 +288,9 @@ export default function ValleyOfFlowersTrek() {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Email"
+                  placeholder="Email (optional)"
                   value={formData.email}
                   onChange={handleChange}
-                  required
                   className="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-orange-400"
                 />
                 <input
@@ -335,7 +321,7 @@ export default function ValleyOfFlowersTrek() {
         </div>
       </section>
 
-      {/* Additional Components */}
+      {/* Carousel + Other Sections */}
       <HimaliyeMyTripCarousel />
       <HimTrek />
     </>
