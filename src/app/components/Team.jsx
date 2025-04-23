@@ -20,7 +20,7 @@ const teamMembers = [
     name: "Priya Sharma",
     role: "Trek Lead",
     bio: "Certified mountaineer with a love for nature and guiding adventurers safely.",
-    image: "/team2.webp",
+    image: "/deal9.webp",
     linkedin: "https://linkedin.com/in/priyasharma",
     twitter: "https://twitter.com/priyasharma",
     instagram: "https://instagram.com/priyasharma",
@@ -29,7 +29,7 @@ const teamMembers = [
     name: "Rohan Kapoor",
     role: "Operations Head",
     bio: "Manages logistics with precision and ensures every trek is smooth and safe.",
-    image: "/team3.webp",
+    image: "/deal9.webp",
     linkedin: "https://linkedin.com/in/rohankapoor",
     twitter: "https://twitter.com/rohankapoor",
     instagram: "https://instagram.com/rohankapoor",
@@ -38,14 +38,23 @@ const teamMembers = [
     name: "Sneha Verma",
     role: "Marketing & Outreach",
     bio: "Crafts compelling campaigns to bring trekking adventures to the world.",
-    image: "/team4.webp",
+    image: "/deal9.webp",
+    linkedin: "https://linkedin.com/in/snehaverma",
+    twitter: "https://twitter.com/snehaverma",
+    instagram: "https://instagram.com/snehaverma",
+  },
+  {
+    name: "Mohit Verma",
+    role: "Marketing & Outreach",
+    bio: "Crafts compelling campaigns to bring trekking adventures to the world.",
+    image: "/deal9.webp",
     linkedin: "https://linkedin.com/in/snehaverma",
     twitter: "https://twitter.com/snehaverma",
     instagram: "https://instagram.com/snehaverma",
   },
 ];
 
-const TeamCarousel = () => {
+const Team = () => {
   return (
     <section className="py-10 px-4 sm:px-6 md:px-10 lg:px-20 bg-white max-w-[1440px] mx-auto">
       <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-gray-800">
@@ -98,4 +107,4 @@ const TeamCarousel = () => {
   );
 };
 
-export default TeamCarousel;
+export default Team;
