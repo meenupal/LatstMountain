@@ -971,11 +971,11 @@ import HimaliyeMyTripCarousel from "../components/HimaliyeMyTrip";
 import HimTrek from "../components/HimTrek";
 
 const destinations = [
-  { src: "/kuari1.webp", gridClass: "lg:col-span-2" },
-  { src: "/kuari2.webp" },
-  { src: "/kuari3.webp" },
-  { src: "/kuari4.webp" },
-  { src: "/kuari5.webp" },
+  { src: "/deal67.webp", gridClass: "lg:col-span-2" },
+  { src: "/deal68.webp" },
+  { src: "/deal65.webp" },
+  { src: "/deal62.webp" },
+  { src: "/deal52.webp" },
 ];
 
 const itinerary = [
