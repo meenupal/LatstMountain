@@ -144,7 +144,7 @@ const AboutSection = () => {
 
       {/* Right Side: Images */}
       <div className="md:w-1/2 flex justify-center relative">
-        <div className="relative w-104 h-80 md:w-132 md:h-104 rounded-2xl overflow-hidden shadow-lg">
+        <div className="relative px-4 w-104 h-80 md:w-132 md:h-104 rounded-2xl overflow-hidden shadow-lg">
           <Image
             src="/trek1.webp"
             alt="Hiker in forest"
