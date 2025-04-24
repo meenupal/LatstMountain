@@ -71,7 +71,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="tel:+918580904609">+91-85809 04609</a>
+                <a href="tel:+ 916239092532">+91-6239092532</a>
+                <br></br>
+                <a href="tel:+ 7466028080">+91-7466028080</a>
               </li>
             </ul>
           </div>
@@ -108,7 +110,7 @@ export default function Footer() {
       </div> */}
         <div className="sticky top-16 z-50 flex justify-start mt-6  md:justify-center px-4">
           <a
-            href="https://wa.me/9837218345"
+            href="https://wa.me/6239092532"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2  bg-white text-black px-4 py-2 rounded-lg shadow-md hover:bg-[#847ce0] hover:text-white transition-all duration-300 ease-in-out"

@@ -62,7 +62,7 @@ export default function About() {
             <h1 className="text-5xl  font-extrabold drop-shadow-lg">
               About Us
             </h1>
-            <h3 className="text-lg mt-4 font-light">
+            <h3 className="text-lg mt-4 font-medium">
               Discover the Himalayas like never before—one step at a time.
             </h3>
           </div>

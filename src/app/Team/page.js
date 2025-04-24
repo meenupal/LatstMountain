@@ -62,7 +62,7 @@ const TeamCarousel = () => {
           {/* <h3 className="text-lg mt-4 font-light">
               Discover the Himalayas like never before—one step at a time.
             </h3> */}
-          <h3 className="text-lg  text-gray-700 mt-4 font-light">
+          <h3 className="text-lg font-medium text-gray-700 mt-4 font-light">
             Meet the explorers who make every Himalayan step unforgettable.
           </h3>
         </div>

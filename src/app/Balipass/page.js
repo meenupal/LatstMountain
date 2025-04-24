@@ -75,7 +75,7 @@ export default function BaliPassTrekAdventure() {
 
 📌 Please reach out for confirmation and next steps.`;
 
-    const whatsappURL = `https://wa.me/9123456156?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/6239092532?text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappURL, "_blank");
@@ -246,13 +246,14 @@ export default function BaliPassTrekAdventure() {
             <h3 className="text-lg font-semibold text-gray-800 mb-1">
               Book Your Slot Now!
             </h3>
-            <div className="text-sm text-green-600 font-bold mb-2">
+            {/* <div className="text-sm text-green-600 font-bold mb-2">
               Limited Period Offer: Save 10%
-            </div>
-            <div className="text-xl font-bold text-red-600 mb-4">
-              Starting From: <span className="text-gray-600">₹13,999</span> /Per
+            </div> */}
+            <div className="text-xl font-bold text-red-600 mb-1">
+              Starting From: <span className="text-gray-600">₹22,999</span> /Per
               Person
             </div>
+            <div className="text-sm text-green-600 font-semibold mb-2"> +5% gst</div>
 
             <form onSubmit={handleSubmit} className="space-y-3">
               <input

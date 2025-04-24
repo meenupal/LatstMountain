@@ -28,7 +28,7 @@ export default function Navbar() {
         { name: "GulabiKanthaTrek", link: "/GulabiKantha" },
         { name: "BalipassTrek", link: "/Balipass" },
         { name: "Dayara Bugyal Trek", link: "/DayaraBugyal" },
-        { name: "Brahmatal Winter Trek", link: "/Bramatal" },
+        { name: "Brahmatal Winter Trek", link: "/Bramtal" },
         { name: "Kuari Pass Trek", link: "/Kuaripass" },
         { name: "Kedarkantha Trek ", link: "/Kedarkantha" },
         { name: "Vinayak Top Trek", link: "/VinayakTrek" },
@@ -42,11 +42,11 @@ export default function Navbar() {
     },
     {
       name: "Stays with us",
-      link: "#",
-      dropdown: [
-        { name: "GulabiKantha", link: "/GulabiKanthaTrek" },
-        { name: "Balipass", link: "/BalipassTrek" },
-      ],
+      link: "/",
+      // dropdown: [
+      //   { name: "GulabiKantha", link: "/GulabiKanthaTrek" },
+      //   { name: "Balipass", link: "/BalipassTrek" },
+      // ],
     },
     { name: "Blog", link: "/Blog" },
     { name: "Contact Us", link: "/Contact" },

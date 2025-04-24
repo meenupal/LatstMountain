@@ -259,11 +259,11 @@ import HimaliyeMyTripCarousel from "../components/HimaliyeMyTrip";
 import HimTrek from "../components/HimTrek";
 
 const destinations = [
-  { src: "/dayara1.webp", gridClass: "lg:col-span-2" },
-  { src: "/dayara2.webp" },
-  { src: "/dayara3.webp" },
-  { src: "/dayara4.webp" },
-  { src: "/dayara5.webp" },
+  { src: "/deal42.webp", gridClass: "lg:col-span-2" },
+  { src: "/deal43.webp" },
+  { src: "/deal34.webp" },
+  { src: "/deal41.webp" },
+  { src: "/deal56.webp" },
 ];
 
 const itinerary = [
@@ -319,7 +319,7 @@ ${formData.email ? `*Email:* ${formData.email}\n` : ""}
 
 📌 Please reach out for confirmation and further details.`;
 
-    const whatsappURL = `https://wa.me/9123456156?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/6239092532?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, "_blank");
   };
 
@@ -462,12 +462,13 @@ ${formData.email ? `*Email:* ${formData.email}\n` : ""}
               <h3 className="text-lg font-semibold text-gray-800 mb-1">
                 Book Your Trek Today
               </h3>
-              <div className="text-sm text-green-600 font-bold mb-2">
+              {/* <div className="text-sm text-green-600 font-bold mb-2">
                 Weekend Departure Available
+              </div> */}
+              <div className="text-xl font-bold text-red-600 mb-1">
+                Starting From: <span className="text-gray-600">₹7,000</span>/Per Person
               </div>
-              <div className="text-xl font-bold text-red-600 mb-4">
-                Starting From: <span className="text-gray-600">₹5,499</span>/Per Person
-              </div>
+              <div className="text-sm text-green-600 font-semibold mb-2"> +5% gst</div>
 
               <form onSubmit={handleSubmit} className="space-y-3">
                 <input

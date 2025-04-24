@@ -101,7 +101,7 @@ export default function CharDhamYatra() {
 
 📌 Please reach out for confirmation and further details.`;
 
-    const whatsappURL = `https://wa.me/9123456156?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/6239092532?text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappURL, "_blank");
@@ -283,13 +283,14 @@ export default function CharDhamYatra() {
               <h3 className="text-lg font-semibold text-gray-800 mb-1">
                 Reserve Your Spiritual Journey
               </h3>
-              <div className="text-sm text-green-600 font-bold mb-2">
+              {/* <div className="text-sm text-green-600 font-bold mb-2">
                 Special Early Booking Offer
-              </div>
-              <div className="text-xl font-bold text-red-600 mb-4">
-                Starting From: <span className="text-gray-600">₹21,999</span>
+              </div> */}
+              <div className="text-xl font-bold text-red-600 mb-1">
+                Starting From: <span className="text-gray-600">₹30,000</span>
                 /Per Person
               </div>
+              <div className="text-sm text-green-600 font-semibold mb-2"> +5% gst</div>
 
               <form onSubmit={handleSubmit} className="space-y-3">
                 <input

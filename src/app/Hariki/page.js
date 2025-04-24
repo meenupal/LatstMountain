@@ -525,7 +525,7 @@ ${formData.email ? `*Email:* ${formData.email}\n` : ""}
 
 📌 Please reach out for confirmation and further details.`;
 
-    const whatsappURL = `https://wa.me/9123456156?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/6239092532?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, "_blank");
   };
 
@@ -678,12 +678,13 @@ ${formData.email ? `*Email:* ${formData.email}\n` : ""}
               <h3 className="text-lg font-semibold text-gray-800 mb-1">
                 Book Your Trek Today
               </h3>
-              <div className="text-sm text-green-600 font-bold mb-2">
+              {/* <div className="text-sm text-green-600 font-bold mb-2">
                 Limited Batches Available
+              </div> */}
+              <div className="text-xl font-bold text-red-600 mb-1">
+                Starting From: <span className="text-gray-600">₹9,999</span>/Per Person
               </div>
-              <div className="text-xl font-bold text-red-600 mb-4">
-                Starting From: <span className="text-gray-600">₹8,499</span>/Per Person
-              </div>
+              <div className="text-sm text-green-600 font-semibold mb-2"> +5% gst</div>
 
               <form onSubmit={handleSubmit} className="space-y-3">
                 <input
