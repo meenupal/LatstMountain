@@ -1,17 +1,28 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
+
 
 const BookYourStayForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    checkin: "",
+    checkin: "6239092532",
     checkout: "",
     guests: "",
     message: "",
   });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   phone: "6239092532", // Pre-filled phone number
+  //   checkin: "",
+  //   checkout: "",
+  //   guests: "",
+  //   message: "",
+  // });
+  
 
   const [errors, setErrors] = useState({});
 
@@ -59,6 +70,42 @@ const BookYourStayForm = () => {
       setErrors(validationErrors);
     }
   };
+  useEffect(() => {
+    // Example: Auto-submit form with preset data
+    const demoData = {
+      name: "Demo User",
+      email: "demo@example.com",
+      phone: "6239092532",
+      checkin: "2025-05-01",
+      checkout: "2025-05-05",
+      guests: "2",
+      message: "Looking forward to our stay!",
+    };
+  
+    setFormData(demoData);
+  
+    // Submit after setting data
+    setTimeout(() => {
+      const validationErrors = validateForm();
+      if (Object.keys(validationErrors).length === 0) {
+        console.log("Booking submitted:", demoData);
+        alert("Thank you! Your booking request has been received.");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          checkin: "",
+          checkout: "",
+          guests: "",
+          message: "",
+        });
+        setErrors({});
+      } else {
+        setErrors(validationErrors);
+      }
+    }, 500); // slight delay to ensure state updates
+  }, []);
+  
 
   return (
     <div
